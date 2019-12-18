@@ -1,0 +1,18 @@
+.NavigationItem{
+   
+    display: flex;
+    flex-flow: column;
+    height: 80%;
+    justify-content: center;
+    padding-left: 20px;
+}
+.NavigationItem a{
+    cursor: pointer;
+    color:#999;
+    text-decoration: none;
+    font-size: 12px;
+}
+.NavigationItem a:hover,.NavigationItem a:active{
+    cursor: pointer;
+    color: white;
+}

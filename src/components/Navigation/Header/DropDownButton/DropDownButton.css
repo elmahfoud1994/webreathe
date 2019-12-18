@@ -1,0 +1,17 @@
+.DropDownButton{
+    height: 35%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+.DropDownButton div{
+    height: 2px;
+    width:20px;
+    background-color: white;
+    border-radius: 5px;
+}
+@media(min-width:520px){
+    .DropDownButton{
+        display: none;
+    }
+}
