@@ -1,15 +1,15 @@
 @media(min-width:530px){
     .Module{
-        position: fixed;
+        position: absolute;
         display: flex;
         flex-flow:column;
         z-index: 500;
         background-color: rgb(247, 255, 249);
-        height: 30rem;
+        height: 80%;
         width: 90%;
         padding-top: 16px;
         left: 5%;
-        top: 6rem;
+        top: 4rem;
         border-radius: 25px;
         box-sizing: border-box;
         transition: all 0.3s ease-out;
@@ -26,7 +26,6 @@
     }
     .ModuleHeader h1{
        margin: 0;
-      
        margin-right: 10px;
        color: rgb(3, 136, 252);
     }
