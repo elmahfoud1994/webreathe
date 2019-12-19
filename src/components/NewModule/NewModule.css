@@ -46,15 +46,21 @@
         display: flex;
         flex-direction: column;
         flex:6;
+        margin:0;
+        padding: 0;
         padding-top: 10px;
        
         
     }
     .ModuleBody .RightSide{
         display: flex;
+        flex-flow: column;
+        margin:0;
+        padding: 0;
         flex:4;
         border-bottom-right-radius: 25px;
         background-color: rgb(235, 245, 252);
+        overflow-y: auto;
         
     }
 }

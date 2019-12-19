@@ -26,25 +26,25 @@ const form1=()=>(
                 <span>
                 <GoKeyboard />
                 </span>
-                <input type="text" placeholder="Module Name" />
+                <input type="text" placeholder="Module Name" required />
             </div>
             <div class="Form1Field">
             <span>
                 <FiType />
                 </span>
-                <input type="text" placeholder="Module Type" />
+                <input type="text" placeholder="Module Type" required/>
             </div>
             <div class="Form1Field">
             <span>
                 <TiSortNumerically />
                 </span>
-                <input type="number" placeholder="Module Number" />
+                <input type="number" placeholder="Module Number" required/>
             </div>
             <div class="Form2Field">
             <span><MdDescription/></span>
-            <textarea type="text" placeholder="Module Description" />
+            <textarea type="text" placeholder="Module Description" required/>
             </div>
-            <button className="Form2Continue" >
+            <button className="Form2Continue" type="submit" >
                     Continue
             </button>
             

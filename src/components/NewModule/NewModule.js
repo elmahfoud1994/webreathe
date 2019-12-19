@@ -3,7 +3,7 @@ import './NewModule.css'
 import Aux from '../../hoc/Auxilary'
 import BackDrop from '../ui/BackDrop/BackDrop'
 import Form1 from '../NewModule/Form1/Form1'
-import Form2 from '../NewModule/Form2/Form2'
+import NewModuleStatus from '../NewModule/NewModuleStatus/NewModuleState'
 import {MdImportantDevices} from 'react-icons/md'
 const newModule=(props)=>(
     <Aux>
@@ -17,11 +17,11 @@ const newModule=(props)=>(
                 <h2>New Module</h2>
             </div>
             <div  className="ModuleBody">
-                <div className="LeftSide">
+                <form className="LeftSide">
                     <Form1 />
-                </div>
+                </form>
                 <div className="RightSide">
-                    <Form2 />
+                    <NewModuleStatus/>
                 </div>
             </div>
         </div>

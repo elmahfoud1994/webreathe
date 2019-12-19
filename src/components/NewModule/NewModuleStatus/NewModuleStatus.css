@@ -1,0 +1,29 @@
+.imageHolder{
+    margin-top: 2% ;
+    margin-bottom: 5% ;
+    margin-left:2%;
+    background-color: rgba(255,255,255,0.2);
+}
+.imageHolder span{
+   font-size: 1.7em;
+   text-align: center;
+   color:rgb(42, 133, 245);
+   
+    
+}
+
+.messageStatus{
+    display:flex;
+    align-items: center;
+    margin:0;
+    padding: 0;
+    margin-left:2%;
+    margin-bottom: 3%;
+}
+.messageStatus span{
+    margin:0;
+    padding: 0;
+    font-size: 1em;
+    color:rgb( 117, 148, 186)
+    
+}
