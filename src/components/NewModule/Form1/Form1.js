@@ -44,7 +44,7 @@ const form1=()=>(
             <span><MdDescription/></span>
             <textarea type="text" placeholder="Module Description" />
             </div>
-            <button className="Form2Continue">
+            <button className="Form2Continue" >
                     Continue
             </button>
             

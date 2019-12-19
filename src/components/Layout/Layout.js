@@ -20,10 +20,12 @@ class Layaout extends Component{
     render(){
         return(
             <Aux>
-                <NewModule clicked={this.hideAddNewModuleHandler} show={this.state.addNewModuleVisble}/>
+               
                 <Header clicked={this.showAddNewModuleHandler}/>
+                <NewModule clicked={this.hideAddNewModuleHandler} show={this.state.addNewModuleVisble}/>
                 <div className="Main" >
                 {this.props.children}
+               
                 </div>
             </Aux>
         )

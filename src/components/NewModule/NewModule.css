@@ -5,11 +5,11 @@
         flex-flow:column;
         z-index: 500;
         background-color: rgb(247, 255, 249);
+        height: 30rem;
         width: 90%;
-        height: 80%;
         padding-top: 16px;
         left: 5%;
-        top: 13%;
+        top: 6rem;
         border-radius: 25px;
         box-sizing: border-box;
         transition: all 0.3s ease-out;
@@ -19,7 +19,7 @@
         flex:1;
         width:100%;
         border-bottom: 2px solid rgb(230, 232, 235);
-         align-items:center;
+        align-items:center;
         display: flex;  
         box-sizing: border-box;
         flex-direction: row;
@@ -58,6 +58,4 @@
         background-color: rgb(235, 245, 252);
         
     }
-    
-
 }
