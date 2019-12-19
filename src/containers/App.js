@@ -5,7 +5,7 @@ import Layaout from '../components/Layout/Layout'
 class App extends Component {
   render(){
     return (
-     <Layaout/>
+     <Layaout></Layaout>
     );
   }
 }

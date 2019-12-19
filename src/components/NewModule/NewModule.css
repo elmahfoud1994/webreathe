@@ -1,0 +1,63 @@
+@media(min-width:530px){
+    .Module{
+        position: fixed;
+        display: flex;
+        flex-flow:column;
+        z-index: 500;
+        background-color: rgb(247, 255, 249);
+        width: 90%;
+        height: 80%;
+        padding-top: 16px;
+        left: 5%;
+        top: 13%;
+        border-radius: 25px;
+        box-sizing: border-box;
+        transition: all 0.3s ease-out;
+    }
+    .ModuleHeader{
+        padding-left:20px;
+        flex:1;
+        width:100%;
+        border-bottom: 2px solid rgb(230, 232, 235);
+         align-items:center;
+        display: flex;  
+        box-sizing: border-box;
+        flex-direction: row;
+    }
+    .ModuleHeader h1{
+       margin: 0;
+      
+       margin-right: 10px;
+       color: rgb(3, 136, 252);
+    }
+    .ModuleHeader h2{
+        margin: 0;
+        color:rgb(20, 20, 20);
+        padding-top:1px;
+
+    }
+    .ModuleBody{
+        flex:9;
+        display: flex;
+        flex-flow: row;
+        width:100%;
+       
+    }
+    .ModuleBody .LeftSide{
+        display: flex;
+        flex-direction: column;
+        flex:6;
+        padding-top: 10px;
+       
+        
+    }
+    .ModuleBody .RightSide{
+        display: flex;
+        flex:4;
+        border-bottom-right-radius: 25px;
+        background-color: rgb(235, 245, 252);
+        
+    }
+    
+
+}

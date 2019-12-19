@@ -22,7 +22,7 @@ class Header extends Component{
                 <DropDownButton clicked={this.showDropDownHandler}/>
                 <Logo />
                 <nav>
-                    <NavigationItems/>
+                    <NavigationItems add={this.props.clicked}/>
                 </nav>
             </header>
         )

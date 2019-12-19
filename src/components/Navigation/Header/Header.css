@@ -1,4 +1,7 @@
 .Header{
+    position: fixed;
+    top:0;
+    left: 0;
     display: flex;
     flex-flow: row;
     height:3rem;
@@ -6,6 +9,7 @@
     background-color: rgb(20, 20, 20);
     box-sizing: border-box;
     padding: 0 20px;
+    width: 100%;
 }
 .Header nav{
     display: none;

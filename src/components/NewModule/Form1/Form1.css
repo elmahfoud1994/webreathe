@@ -1,0 +1,144 @@
+.Form1Header{
+    margin-left: 10px;
+    height:25px ;
+    display: flex;
+    flex-flow:row;
+    box-sizing: border-box;
+    align-items: center;
+}
+.Form1Header h4{
+    margin-top:0;
+    margin-right:10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    
+}
+.Form1Header h5{
+    margin-top:0;
+    margin-right:5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.Form1Header h6{
+    color:rgb(215, 217, 219);
+    margin-top:0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 1px;
+}
+.BarStatus{
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 8px;
+    width: 180px;
+    border: 1p;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.BarStatus div{
+    height: 4px;
+    width: 88px;
+    border-radius: 25px;
+    background-color: rgb(105, 203, 224);
+}
+.Form1Body{
+    flex:11;
+    display: flex;
+    flex-direction: column;
+}
+.Form1Body p{
+    margin-top: 0;
+    font-size: 11px;
+    margin-top: 8px;
+    margin-bottom: 11px;
+    margin-left: 10px;
+    color:rgb(167, 170, 171);
+    padding-left: 10px;
+
+}
+.Form1Field{
+   flex:1;
+   display: flex;
+   flex-flow: row;
+   border-radius: 5px;
+   border: 1px solid #b0b0b0;
+   margin-bottom: 25px;
+   margin-left: 30px;
+   margin-right: 20px;
+   padding-left: 2px;
+}
+.Form1Field span{
+    flex:1;
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 20px;
+    color:rgb(167, 170, 171);
+}
+.Form1Field input{
+    flex:15;
+    padding:10px;
+    outline: none;
+    border: none;
+    background-color:rgb(247, 255, 249,0.3) ;
+    color: rgb(20, 20, 20);
+    font-size: 14px;
+}
+.Form1Field input::placeholder{
+    color:rgb(167, 170, 171) ;
+    font-size: 14px;
+}
+.Form2Field{
+    flex:2;
+    display: flex;
+    flex-flow: row;
+    border: 1px solid #b0b0b0;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 5px ;
+    padding-left: 2px;
+ }
+ .Form2Field span{
+    flex:1;
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: flex-end;
+    font-size: 20px;
+    padding-top: 10px;
+    color:rgb(167, 170, 171);
+}
+.Form2Field textarea{
+    flex:15;
+    padding:10px;
+    outline: none;
+    border: none;
+    background-color:rgb(247, 255, 249,0.3) ;
+    color: rgb(20, 20, 20);
+    font-size: 14px;
+    font-family: Arial;
+}
+.Form2Field textarea::placeholder{
+    color:rgb(167, 170, 171) ;
+    font-size: 14px;
+    padding-top: 0;
+    font-family: Arial;
+}
+
+ .Form1Body button{
+     flex:1;
+     padding: 0;
+     border-bottom-left-radius: 25px;
+     background-color:rgb(0, 132, 255);
+     color:white;
+     outline: none;
+     cursor: pointer;
+     border: 1px solid rgb(0, 132, 255);
+ }

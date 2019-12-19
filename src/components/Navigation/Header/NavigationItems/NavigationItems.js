@@ -3,7 +3,7 @@ import NavigationItem from './NavigationItem/NavigationItem'
 import './NavigationItems.css'
 const navigationItems=(props)=>(
     <ul className='NavigationItems'>
-        <NavigationItem title="New module" link="/"/>
+        <NavigationItem show={props.add} title="New module" link="#"/>
         <NavigationItem title="My Modules" link="/dfdf"/>
         <NavigationItem title="Notifications" link="/sqdqsd"/>
     </ul>
