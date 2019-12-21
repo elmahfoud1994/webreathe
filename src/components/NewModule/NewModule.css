@@ -1,11 +1,10 @@
-@media(min-width:530px){
-    .Module{
+.Module{
         position: absolute;
         display: flex;
         flex-flow:column;
         z-index: 500;
         background-color: rgb(247, 255, 249);
-        height: 80%;
+        min-height: 80%;
         width: 90%;
         padding-top: 16px;
         left: 5%;
@@ -50,7 +49,17 @@
         margin:0;
         padding: 0;
         padding-top: 10px;
-       
+        border-bottom-left-radius:  25px;
+        border-bottom-right-radius: 25px;
+        
+    }
+    .ModuleBody .RightSide{
+        display: none;
+    }
+    
+@media(min-width:530px){
+    .ModuleBody .LeftSide{
+        border-bottom-right-radius: 0;
         
     }
     .ModuleBody .RightSide{
@@ -62,6 +71,5 @@
         border-bottom-right-radius: 25px;
         background-color: rgb(235, 245, 252);
         overflow-y: auto;
-        
     }
 }

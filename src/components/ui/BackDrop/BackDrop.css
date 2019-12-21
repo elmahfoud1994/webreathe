@@ -1,4 +1,5 @@
 .BackDrop{
+	position: absolute;
     width: 100%;
     height: 100%;
     background-color:rgb(224, 224, 224) ;

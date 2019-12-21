@@ -1,17 +1,39 @@
 .NavigationItem{
     display: flex;
-    flex-flow: column;
-    height: 80%;
+    flex-flow:column;
     justify-content: center;
-    padding-left: 20px;
+    align-items: center;
+    margin-bottom: 5px;
+    height: 20%;
+    width: 100%;
 }
 .NavigationItem a{
     cursor: pointer;
+    width: 100%;
     color:#999;
+    text-align: center;
     text-decoration: none;
-    font-size: 12px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
 }
 .NavigationItem a:hover,.NavigationItem a:active{
     cursor: pointer;
     color: white;
+    border-bottom: 1px solid white;
+}
+@media(min-width:520px){
+    .NavigationItem{
+    width: auto;
+    height: 80%;
+    padding-left: 20px;
+    margin:0; 
+}
+.NavigationItem a{
+    text-align: left;
+    padding-bottom: 0;
+    font-size: 12px;
+}
+.NavigationItem a:hover,.NavigationItem a:active{
+    border: none;
+}
 }

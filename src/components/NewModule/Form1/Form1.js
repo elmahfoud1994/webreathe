@@ -5,36 +5,35 @@ import { MdDescription } from "react-icons/md";
 import { GoKeyboard } from "react-icons/go";
 import Aux from '../../../hoc/Auxilary'
 import FormHeader from '../FormHeader/FormHeader'
-import {GiSandsOfTime} from "react-icons/gi";
 import './Form1.css'
 const form1=(props)=>(
     <Aux>
         <div className="Form1Body">
-            <FormHeader/>
+            <FormHeader form1IsValid={props.form1IsValid} form2IsValid={props.form2IsValid}/>
             <p>Please fill some basic informations abaout the module.</p>
-            <div class="Form1Field">
+            <div className="Form1Field">
                 <span>
                 <GoKeyboard />
                 </span>
-                <input type="text" placeholder="Module Name" required />
+                <input type="text" placeholder="Module Name" value={props.name} onChange={(text)=>props.form1Handler(0,text.target.value)} required />
             </div>
-            <div class="Form1Field">
+            <div className="Form1Field">
             <span>
-                <GiSandsOfTime />
+                <FiType />
                 </span>
-                <input type="text" placeholder="Module Type" required/>
+                <input type="text" placeholder="Module Type" value={props.type} onChange={(text)=>props.form1Handler(1,text.target.value)} required/>
             </div>
-            <div class="Form1Field">
+            <div className="Form1Field">
             <span>
                 <TiSortNumerically />
                 </span>
-                <input type="number" placeholder="Module Number" required/>
+                <input type="number" onChange={(text)=>props.form1Handler(2,text.target.value)} value={props.number} placeholder="Module Number" required/>
             </div>
-            <div class="Form2Field">
+            <div className="Form2Field">
             <span><MdDescription/></span>
-            <textarea type="text" placeholder="Module Description" required/>
+            <textarea type="text" onChange={(text)=>props.form1Handler(3,text.target.value)} value={props.description}  placeholder="Module Description" required/>
             </div>
-            <button  className="Form2Continue" type="submit" onClick={props.navigate} >
+            <button disabled={!props.form1IsValid}  className="Form1Continue" type="submit" onClick={props.navigate} >
                     Continue
             </button>
             
