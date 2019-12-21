@@ -1,0 +1,55 @@
+.Form2Body{
+    flex:11;
+    display: flex;
+    flex-direction: column;
+}
+.Form2Body p{
+    margin-top: 0;
+    font-size: 0.6em;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    color:rgb(167, 170, 171);
+    padding-left: 10px;
+
+}
+.ItemsContainer{
+    flex:5;
+    display: flex;
+    flex-flow: column;
+    padding-bottom: 6.5%;
+    padding-left: 20px;
+    overflow-y: auto;
+}
+.ItemsContainer a{
+    margin-bottom: 1%;
+    flex: 1;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border-bottom:1px solid rgb(184, 184, 184);
+
+}
+.ItemsContainer a:hover{
+    border:1px solid rgb(105, 203, 224);
+}
+.ItemsContainer span{
+ padding-left: 2px;
+ font-size: 1.5em;
+ color: rgb(184, 184, 184);
+}
+.itemLabel{
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+.SubmitButton{
+    flex:1;
+    border-bottom-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    color:white;
+    background-color: rgb(75, 250, 162);
+    margin:0;
+    outline: none;
+    border: 1px solid  rgb(75, 250, 162);
+
+}

@@ -1,0 +1,45 @@
+.FormHeader{
+    margin-left: 10px;
+    height:25px ;
+    display: flex;
+    flex-flow:row;
+    box-sizing: border-box;
+    align-items: center;
+}
+.FormHeader h4{
+    margin-top:0;
+    margin-right:10px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    
+}
+.FormHeader h5{
+    margin-top:0;
+    margin-right:5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.FormHeader h6{
+    color:rgb(215, 217, 219);
+    margin-top:0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 1px;
+}
+.BarStatus{
+    margin-left: 10px;
+    padding-left: 10px;
+    height: 8px;
+    width: 180px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.BarStatus div{
+    height: 4px;
+    width: 88px;
+    border-radius: 25px;
+    background-color: rgb(105, 203, 224);
+}

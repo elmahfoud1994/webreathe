@@ -1,26 +1,16 @@
 import React from 'react'
-import { IoIosArrowBack } from "react-icons/io";
 import { FiType } from "react-icons/fi";
 import { TiSortNumerically } from "react-icons/ti";
 import { MdDescription } from "react-icons/md";
 import { GoKeyboard } from "react-icons/go";
-
-
 import Aux from '../../../hoc/Auxilary'
+import FormHeader from '../FormHeader/FormHeader'
+import {GiSandsOfTime} from "react-icons/gi";
 import './Form1.css'
-const form1=()=>(
+const form1=(props)=>(
     <Aux>
-        <div className="Form1Header">
-            <h4><IoIosArrowBack /></h4>
-            <h5>Module informations</h5>
-            <h6> 1 of 2</h6>
-           
-        </div>
-        <div className="BarStatus" >
-            <div></div>
-            <div></div>
-        </div>
         <div className="Form1Body">
+            <FormHeader/>
             <p>Please fill some basic informations abaout the module.</p>
             <div class="Form1Field">
                 <span>
@@ -30,7 +20,7 @@ const form1=()=>(
             </div>
             <div class="Form1Field">
             <span>
-                <FiType />
+                <GiSandsOfTime />
                 </span>
                 <input type="text" placeholder="Module Type" required/>
             </div>
@@ -44,7 +34,7 @@ const form1=()=>(
             <span><MdDescription/></span>
             <textarea type="text" placeholder="Module Description" required/>
             </div>
-            <button className="Form2Continue" type="submit" >
+            <button  className="Form2Continue" type="submit" onClick={props.navigate} >
                     Continue
             </button>
             
