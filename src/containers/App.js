@@ -5,7 +5,10 @@ import Layaout from '../components/Layout/Layout'
 class App extends Component {
   render(){
     return (
-     <Layaout></Layaout>
+    <div className="App">
+    	 <Layaout></Layaout>
+    </div>
+    
     );
   }
 }

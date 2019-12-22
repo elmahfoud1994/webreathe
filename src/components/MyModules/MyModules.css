@@ -1,0 +1,69 @@
+.MyModulesContainer{
+	flex:1;
+	display: flex;
+	flex-flow: column;
+
+
+
+}
+.MyModules{
+	flex:10;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	border:1px solid black;
+	overflow-y: auto;
+	padding-top: 1%;
+
+}
+.PaginationContainer{
+	flex:1;
+	border:1px solid black;
+}
+.MyModule{
+	height:20rem;
+	width: 20rem;
+	margin-bottom: 1%;
+	display: flex;
+	flex-flow: column;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 1px rgb(184, 184, 184);
+	background-image: url("https://cdn.droggol.com/web/image/535/web.svg");
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(20, 20, 20,0.9);
+}
+.MyModule p{
+	margin: 0;
+	flex:5;
+	color: white;
+	padding: 3%;
+}
+
+.MyModule h2{
+	flex:2;
+	color: rgb(201, 200, 197);
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin:0;
+	padding: 2%;
+	box-sizing: border-box;
+	overflow:hidden;
+	padding-right: 1%;
+	text-overflow: ellipsis;
+
+
+}
+.MyModule span{
+	flex:1;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-end;
+	justify-content: center;
+	padding-right: 2%;
+	color:white;
+}

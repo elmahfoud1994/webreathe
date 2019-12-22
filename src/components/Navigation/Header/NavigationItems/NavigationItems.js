@@ -4,8 +4,8 @@ import './NavigationItems.css'
 const navigationItems=(props)=>(
     <ul className='NavigationItems'>
         <NavigationItem show={props.add} title="New module" link="#"/>
-        <NavigationItem title="My Modules" link="/dfdf"/>
-        <NavigationItem title="Notifications" link="/sqdqsd"/>
+        <NavigationItem title="My Modules" link="/"/>
+        <NavigationItem title="Notifications" link="/notifications"/>
     </ul>
 )
 export default navigationItems

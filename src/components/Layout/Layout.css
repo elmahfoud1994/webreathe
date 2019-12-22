@@ -1,4 +1,7 @@
 .Main{
    margin-top: 3rem;
    overflow: auto;
+   flex:1;
+   display: flex;
+   flex-flow: row;
 }
