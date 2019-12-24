@@ -2,6 +2,7 @@
 	flex:1;
 	display: flex;
 	flex-flow: column;
+	overflow-y: auto;
 }
 .MyModules{
 	flex:10;
@@ -11,5 +12,4 @@
 	align-items: center;
 	flex-wrap: wrap;
 	padding-top: 1%;
-
 }
