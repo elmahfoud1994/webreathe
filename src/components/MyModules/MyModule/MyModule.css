@@ -1,0 +1,57 @@
+.MyModule{
+	height:20rem;
+	width: 20rem;
+	margin-bottom: 1%;
+	display: flex;
+	flex-flow: column;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px 1px rgb(184, 184, 184);
+	background-image: url("https://cdn.droggol.com/web/image/535/web.svg");
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(20, 20, 20,0.9);
+	cursor: pointer;
+}
+.MyModule:hover{
+	background-color: white;
+}
+.MyModule:hover h2{
+	color: rgb(20,20,20);
+}
+.MyModule:hover span{
+	color: rgb(20,20,20);
+}
+.MyModule:hover p{
+	color: black;
+}
+.MyModule p{
+	margin: 0;
+	color: white;
+	padding:3%; 
+}
+.MyModuleHeading{
+	flex:1;
+
+}
+.MyModuleBody{
+	flex:5;
+	overflow: hidden;
+}
+.MyModule h2{
+	color: rgb(201, 200, 197);
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin:0;
+	padding: 2%;
+	box-sizing: border-box;
+}
+.MyModule span{
+	flex:1;
+	display: flex;
+	flex-flow: column;
+	align-items: flex-end;
+	justify-content: center;
+	padding-right: 2%;
+	color:white;
+}

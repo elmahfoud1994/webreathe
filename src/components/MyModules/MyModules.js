@@ -1,61 +1,27 @@
 import React,{Component} from 'react'
 import './MyModules.css'
+import MyModule from './MyModule/MyModule'
 import iotImage from '../../assets/images/iot.png'
+import PaginationItems from './PaginationItems/PaginationItems'
 class MyModules extends Component{
 	state={
-		modules:[]
+		modules:[
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		]
 	}
 	render(){
 		return(
 			<div className="MyModulesContainer">
 				<div className="MyModules">
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
-					<div className="MyModule">
-						<h2>My New Module</h2>
-						<p>this is a new module that allows our users to enjoy a great experience.....</p>
-						<span>created at : 02/12/2019 </span>
-					</div>
+				{
+					this.state.modules.map(module=><MyModule description={module.description} title={module.title} createdAt={module.createdAt}/>)
+				}
 				</div>
-				<div className="PaginationContainer"></div>
+				<PaginationItems count={5}/>
 			</div>
 		)
 	}

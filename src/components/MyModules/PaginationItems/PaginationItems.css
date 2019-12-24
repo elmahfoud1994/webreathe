@@ -1,0 +1,7 @@
+.PaginationItems{
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	padding: 1% 10%;
+}

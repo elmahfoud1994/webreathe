@@ -1,0 +1,15 @@
+.PaginationItem{
+	font-size: 1rem;
+	margin-right: 0.2%;
+	border-radius: 5px;
+	display: flex;
+	border:1px solid rgb(13, 17, 64);
+	outline: none;
+	color:white;
+	background-color:rgb(13, 17, 64);
+	cursor: pointer;
+}
+.PaginationItem:hover{
+	color: rgb(20,20,20);
+	background-color: white;
+}
