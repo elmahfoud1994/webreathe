@@ -2,14 +2,13 @@
 	flex:1;
 	display: flex;
 	flex-flow: column;
-
+	overflow-y: auto;
 	
 }
 .MyModules{
-	flex:10;
+	flex:1;
 	display: flex;
 	flex-flow: row;
-	overflow-y: auto;
 	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
