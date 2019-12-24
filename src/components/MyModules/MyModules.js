@@ -11,6 +11,11 @@ class MyModules extends Component{
 		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
 		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
 		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
+		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"}
 		]
 	}
 	render(){
