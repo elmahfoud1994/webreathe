@@ -2,6 +2,6 @@
    margin-top: 3rem;
    flex:1;
    display: flex;
-   overflow-y: auto;
+   overflow-y: hidden;
    flex-flow: row;
 }
