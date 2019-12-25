@@ -6,7 +6,7 @@ import PaginationItems from './PaginationItems/PaginationItems'
 class MyModules extends Component{
 	state={
 		modules:[
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am hay  ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
 		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
 		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
 		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
