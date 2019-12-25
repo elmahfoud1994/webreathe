@@ -1,9 +1,10 @@
 .App{
 margin:0;
 padding: 0;
-height: 100vh;
+height: 100%;
 display: flex;
 overflow-y: auto;
 flex-flow: column;
+
 }
 
