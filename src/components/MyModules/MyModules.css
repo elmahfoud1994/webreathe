@@ -2,10 +2,10 @@
 	flex:1;
 	display: flex;
 	flex-flow: column;
-	overflow-y: auto;
 }
 .MyModules{
 	flex:1;
+
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;

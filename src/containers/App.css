@@ -1,11 +1,9 @@
 .App{
-height: 100%;
-position: fixed;
+flex:1;
 margin:0;
 padding: 0;
 display: flex;
 flex-flow: column;
-overflow-y: auto;
 }
 
 
