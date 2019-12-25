@@ -6,16 +6,16 @@ import PaginationItems from './PaginationItems/PaginationItems'
 class MyModules extends Component{
 	state={
 		modules:[
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"},
-		{description:"i am bouatim el mahfoud ,i am responsible of creating a fully finctional software",title:"Bouatim El Mahfoud",createdAt:"2013"}
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
+		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
 		]
 	}
 	render(){
