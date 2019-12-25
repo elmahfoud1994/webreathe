@@ -1,12 +1,10 @@
 .MyModulesContainer{
-
 	flex:1;
 	display: flex;
 	flex-flow: column;
 }
 .MyModules{
 	flex:1;
-	overflow-y: auto;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
