@@ -1,5 +1,5 @@
 .Module{
-        position: absolute;
+        position: fixed;
         display: flex;
         flex-flow:column;
         z-index: 500;

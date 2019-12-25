@@ -1,7 +1,7 @@
 .App{
+flex:1;
 margin:0;
 padding: 0;
-height: 100%;
 display: flex;
 overflow-y: auto;
 flex-flow: column;
