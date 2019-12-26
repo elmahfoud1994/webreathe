@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import './MyModules.css'
 import MyModule from './MyModule/MyModule'
 import iotImage from '../../assets/images/iot.png'
+import PaginationItems from './PaginationItems/PaginationItems'
 class MyModules extends Component{
 	state={
 		modules:[
@@ -25,7 +26,7 @@ class MyModules extends Component{
 					this.state.modules.map(module=><MyModule description={module.description} title={module.title} createdAt={module.createdAt}/>)
 				}
 				</div>
-				
+				<PaginationItems count={5}/>
 			</div>
 		)
 	}

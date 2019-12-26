@@ -1,5 +1,5 @@
 .App{
-height: 100%;
+flex:1;
 overflow-y: auto;
 margin:0;
 padding: 0;
