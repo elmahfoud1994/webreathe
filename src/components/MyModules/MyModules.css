@@ -6,7 +6,6 @@
 }
 .MyModules{
 	flex:9;
-	overflow-y: auto;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
