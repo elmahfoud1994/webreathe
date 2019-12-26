@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/webreathe/static/css/main.848f1a41.chunk.css",
-    "main.js": "/webreathe/static/js/main.55f99f29.chunk.js",
-    "main.js.map": "/webreathe/static/js/main.55f99f29.chunk.js.map",
+    "main.css": "/webreathe/static/css/main.957dee33.chunk.css",
+    "main.js": "/webreathe/static/js/main.9d401a76.chunk.js",
+    "main.js.map": "/webreathe/static/js/main.9d401a76.chunk.js.map",
     "runtime-main.js": "/webreathe/static/js/runtime-main.c80820c6.js",
     "runtime-main.js.map": "/webreathe/static/js/runtime-main.c80820c6.js.map",
     "static/js/2.2146bd76.chunk.js": "/webreathe/static/js/2.2146bd76.chunk.js",
     "static/js/2.2146bd76.chunk.js.map": "/webreathe/static/js/2.2146bd76.chunk.js.map",
     "index.html": "/webreathe/index.html",
-    "precache-manifest.48d9fa8bf16fc92f38e469f1218ad543.js": "/webreathe/precache-manifest.48d9fa8bf16fc92f38e469f1218ad543.js",
+    "precache-manifest.70822ea343122b4c31d3b58d367d0abe.js": "/webreathe/precache-manifest.70822ea343122b4c31d3b58d367d0abe.js",
     "service-worker.js": "/webreathe/service-worker.js",
-    "static/css/main.848f1a41.chunk.css.map": "/webreathe/static/css/main.848f1a41.chunk.css.map",
+    "static/css/main.957dee33.chunk.css.map": "/webreathe/static/css/main.957dee33.chunk.css.map",
     "static/js/2.2146bd76.chunk.js.LICENSE": "/webreathe/static/js/2.2146bd76.chunk.js.LICENSE",
     "static/media/iot.png": "/webreathe/static/media/iot.40217429.png",
     "static/media/webreathe.png": "/webreathe/static/media/webreathe.f8759fa3.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.c80820c6.js",
     "static/js/2.2146bd76.chunk.js",
-    "static/css/main.848f1a41.chunk.css",
-    "static/js/main.55f99f29.chunk.js"
+    "static/css/main.957dee33.chunk.css",
+    "static/js/main.9d401a76.chunk.js"
   ]
 }
