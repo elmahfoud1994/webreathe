@@ -3,6 +3,7 @@
 	display: flex;
 	flex-flow: column;
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 .MyModules{
 	flex:1;
