@@ -1,12 +1,12 @@
 .MyModulesContainer{
-	min-height: 100%;
+	flex:1;
 	display: flex;
 	flex-flow: column;
-	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
 }
 .MyModules{
-	flex:1;
+	flex:9;
+	overflow-y: auto;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
