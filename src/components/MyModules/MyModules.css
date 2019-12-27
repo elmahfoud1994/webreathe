@@ -3,15 +3,11 @@
 	display: flex;
 	flex-flow: column;
 	overflow-y: scroll;
+}
 
-}
-@media(min-width:530px){
-	.MyModulesContainer{
-		overflow-y: hidden;
-	}
-}
 .MyModules{
-	flex:1;
+	flex:9;
+	
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
