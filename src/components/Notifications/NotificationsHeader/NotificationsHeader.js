@@ -1,7 +1,7 @@
 import React from 'react'
 import './NotificationsHeader.css'
 import {TiThSmallOutline}  from 'react-icons/ti';
-import {IoIosWarning,IoIosAlert}  from "react-icons/io";
+import {IoIosWarning,IoIosAlert}  from 'react-icons/io';
 const notificationHeader=(props)=>(
 	<div className="NotificationsHeader">
 		<button className="NotificationsAll">
