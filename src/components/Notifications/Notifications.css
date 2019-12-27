@@ -12,8 +12,7 @@
 }
 .NotificationItem{
 	height: 10%;
-
-	margin-bottom: 0.5%;
+	margin-bottom: 5px;
 	display: flex;
 	flex-flow: row;
 	background-color: white;
@@ -36,8 +35,6 @@
 	padding: 1%;
 	flex-flow: column;
 	justify-content: center;
-
-
 }
 .NotificationContent p{
 	color: #999;
