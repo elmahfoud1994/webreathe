@@ -2,12 +2,11 @@
 	flex:1;
 	display: flex;
 	flex-flow: column;
-	overflow-y: scroll;
 }
 
 .MyModules{
 	flex:9;
-	
+	overflow-y: scroll;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
