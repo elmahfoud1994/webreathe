@@ -1,0 +1,5 @@
+.NotificationsBody{
+	flex:9;
+	padding: 1%;
+	overflow-y: auto;
+}

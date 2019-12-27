@@ -1,339 +1,48 @@
-import React from 'react'
+import React,{Component} from 'react'
 import './Notifications.css'
-import { Doughnut } from 'react-chartjs-2'
-import notificationsSvg from '../../assets/images/notifications.svg'
 import NotificationsHeader from './NotificationsHeader/NotificationsHeader'
-import {IoIosWarning,IoIosAlert}  from 'react-icons/io'
-import {MdDelete} from 'react-icons/md'
-import {FaEye} from 'react-icons/fa'
-const Notifications=(props)=>(
-	<div className="Notifications">
-		<NotificationsHeader />
-		<div className="NotificationsBody">
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
+import NotificationBody from './NotificationsBody/NotificationsBody'
+import PaginationItems from '../MyModules/PaginationItems/PaginationItems'
+class Notifications extends Component{
+	state={
+		count:2,
+		notifications:[
+			{
+				message:"battery is low",
+				type:"warning"
+			},
+			{
+				message:"no one cares",
+				type:"danger"
+			},
+			{
+				message:"go to sleep begra",
+				type:"warning"
+			},
+			{
+				message:"i dont care",
+				type:"warning"
+			},
+			{
+				message:"no one understands",
+				type:"danger"
+			},
+			{
+				message:"bary is crat",
+				type:"danger"
+			},
 
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				<div className="NotificationItem">
-					<div className="NotificationType">
-						<IoIosWarning />
-					</div>
-					<div className="NotificationContent">
-						<p>some message error message </p>
-					</div>
-					<div className="NotificationActions">
-						<button className="NotificationViewAction">
-							<FaEye/>
-						</button>
-						<button className="NotificationDeleteAction">
-							<MdDelete />
-						</button>
-					</div>
-				</div>
-				
-				
-		</div>
-	</div>
-)
+		],
+		type:"all"
+	}
+	render(){
+		return(
+			<div className="Notifications">
+				<NotificationsHeader />
+				<NotificationBody notifications={this.state.notifications} />
+				{this.state.count?<PaginationItems count={this.state.count}/>:null}
+			</div>
+		)
+	}
+}
 export default Notifications

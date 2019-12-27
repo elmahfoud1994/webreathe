@@ -1,0 +1,57 @@
+.NotificationItem{
+	height: 10%;
+	margin-bottom: 5px;
+	display: flex;
+	flex-flow: row;
+	background-color: white;
+	border-radius: 5px;
+}
+.NotificationType{
+	flex:1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+}
+.NotificationTypeWarning{
+	color:rgb(255, 248, 41);
+}
+.NotificationTypeDanger{
+	color: rgb(255, 33, 37);
+}
+.NotificationContent{
+	flex:13;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-y: hidden;
+	display: flex;
+	padding: 1%;
+	flex-flow: column;
+	justify-content: center;
+}
+.NotificationContent p{
+	color: #999;
+}
+
+
+.NotificationActions{
+	flex:1;
+	display: flex;
+	flex-flow: row;
+}
+.NotificationActions button{
+	flex:1;
+}
+.NotificationViewAction{
+	background-color: rgb(48, 110, 255);
+	border: 1px solid rgb(48, 110, 255);
+	color: white;
+}
+.NotificationDeleteAction{
+	background-color: rgb(255, 33, 37);
+	border: 1px solid rgb(255, 33, 37);
+	color: white;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+} 
