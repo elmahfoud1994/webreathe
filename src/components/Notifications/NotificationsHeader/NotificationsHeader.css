@@ -1,0 +1,43 @@
+.NotificationsHeader{
+	flex:1;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+	padding-left: 1%;
+}
+.NotificationsHeader button{
+	height: 60%;
+	width: 90px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	align-items: center;
+	color: white;
+	cursor: pointer;
+}
+.NotificationsAll{
+	background-color: rgb(48, 110, 255);
+	border:1px solid rgb(48, 110, 255);
+	border-top-left-radius: 25px;
+	border-bottom-left-radius: 25px;
+	outline: none;
+}
+.NotificationsWarnings{
+	background-color: rgb(255, 248, 41);
+	border:1px solid rgb(255, 248, 41);
+	outline: none;
+}
+.NotificationsDanger{
+	background-color: rgb(255, 33, 37);
+	border:1px solid rgb(255, 33, 37);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	outline: none;
+
+}
+@media(min-width: 520px){
+	.NotificationsHeader{
+		justify-content: flex-start;
+	}
+}
