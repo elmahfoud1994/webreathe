@@ -102,12 +102,7 @@ class NewModule extends Component{
     }
 	render(){
 		return (
-					<Aux>
-        				{this.props.show &&<BackDrop closed={this.props.clicked} show={false}/>}
-        				<div className="Module" style={{
-                    		transform:this.props.show ? 'translateY(0)':'translateY(-100vh)',
-                    		opacity:this.props.show? '1':'0'
-                    	}}> 
+        				<div className="NewModule"> 
             				<div className="ModuleHeader" >
                 				<h1><MdImportantDevices/></h1>
                 				<h2>New Module</h2>
@@ -123,7 +118,7 @@ class NewModule extends Component{
                 				</div>
            					</div>
         				</div>
-   				 	</Aux>
+   				 	
 			)
 	}
     

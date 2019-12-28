@@ -1,8 +1,7 @@
-.Module{
+.NewModule{
         position: fixed;
         display: flex;
         flex-flow:column;
-        z-index: 500;
         background-color: rgb(247, 255, 249);
         min-height: 80%;
         width: 90%;

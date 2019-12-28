@@ -2,6 +2,7 @@ import React,{Component} from 'react'
 import Header from '../Navigation/Header/Header'
 import NewModule from '../NewModule/NewModule'
 import MyModules from '../MyModules/MyModules'
+import MyModuleDetails from '../MyModuleDetails/MyModuleDetails'
 import Notifications from '../Notifications/Notifications'
 import Aux from '../../hoc/Auxilary'
 import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
@@ -26,11 +27,14 @@ class Layaout extends Component{
             <Aux>
                <Router>
                     <Header clicked={this.showAddNewModuleHandler}/>
-                    <NewModule clicked={this.hideAddNewModuleHandler} show={this.state.addNewModuleVisble}/>
+                    
                      <div className="Main" >
                         <Switch>
                             <Route path="/" exact component={MyModules}/>
+                            <Route path="/newmodule" exact component={NewModule} />
+                            <Route path="/:id" exact component={MyModuleDetails} />
                             <Route path="/notifications" exact component={Notifications}/>
+                            
                         </Switch>
                     </div>
                 </Router>
