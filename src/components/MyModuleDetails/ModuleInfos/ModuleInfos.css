@@ -3,7 +3,6 @@
 	background-color: rgb(59, 137, 255);
 	display: flex;
 	flex-flow: column;
-
 }
 .ModuleInfosHeader{
 	flex:1;
@@ -21,13 +20,14 @@
 	color: white;
 	margin: 0;
 	font-size: 2em;
-	
 }
 .ModuleInfosBody{
 	flex:3;
 	display: flex;
 	flex-flow: column;
 	padding: 5%;
+	overflow-y: auto;
+
 }
 
 
@@ -41,10 +41,4 @@
 	margin:0;
 	margin-bottom: 3%;
 
-}
-
-@media(min-width: 520px){
-	.ModuleInfosBody{
-		overflow-y: auto;
-	}
 }
