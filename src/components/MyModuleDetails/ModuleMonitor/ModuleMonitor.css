@@ -3,7 +3,6 @@
 	flex-flow: column;
 	align-items: center;
 	padding: 1%;
-	overflow-y: visible;
 }
 @media(min-width: 520px){
 	.MyModuleMonitor{

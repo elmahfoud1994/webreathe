@@ -8,7 +8,6 @@ const myModuleDetails=(props)=>(
 		<ModuleInfos title="New device" type="Smart tv" createdAt='02/12/1994 14:20' description="this is a smart tv that allows users to wach their best tv shows while sleeping" />
 		<div className="MyModuleStats">
 			<ModuleMonitor/>
-			
 		</div>
 	</div>
 )
