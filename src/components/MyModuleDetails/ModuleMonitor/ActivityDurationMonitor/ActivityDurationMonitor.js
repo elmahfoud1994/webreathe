@@ -17,7 +17,7 @@ const activityDurationMonitor=()=>{
 	return(
 		<div className="ActivityDurationMonitor">
 				<div>
-					<Doughnut   data={data} options={{  maintainAspectRatio: false, legend:{display:true,position:'left',align:'center'},title:{display:true,text:"The duration activity during the last 24h",fontColor:"#fff"} }}/>
+					<Doughnut   data={data} options={{  maintainAspectRatio: false, legend:{display:true,position:'left',align:'center'},title:{display:true,text:"Activity during the last 24h",fontColor:"#fff"} }}/>
 				</div>
 				
 		</div>

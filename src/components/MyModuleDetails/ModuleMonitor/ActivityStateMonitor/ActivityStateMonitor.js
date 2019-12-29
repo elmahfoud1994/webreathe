@@ -20,14 +20,28 @@ const activityStateMonitor=(props)=>{
 			<div>
 				<Line data={data2} 
 					options={{scales: 
-						{yAxes: [{
+						{yAxes:[{
                 			ticks: {
-                					suggestedMin: 0,
-                					suggestedMax: 1
-                					}
-                				}]
+                					fontColor:"white",
+                			}
+                		}],
+                		xAxes:[{
+	                		ticks: {
+	                			fontColor: "white",
+	                		},
+	                		gridLines: {
+        						zeroLineColor: '#fff'
+        					}
+	                	}]
+
                 		},
                 		maintainAspectRatio: false,
+                		legend: {
+            				display: true,
+            				labels: {
+                			fontColor: 'rgb(255, 255, 255)'
+            			}
+        }
                 	}}
              	 />
 			</div>

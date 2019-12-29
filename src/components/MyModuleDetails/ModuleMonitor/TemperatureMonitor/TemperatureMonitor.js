@@ -8,7 +8,7 @@ const temperatureMonitor=(props)=>{
 		    {
 		      label: 'Temperature during the last 24 h',
 		      fill: false,
-		      borderColor: 'rgba(75,192,192,1)',
+		      borderColor: 'rgb(255, 33, 37)',
 		      pointBorderColor: 'rgba(75,192,192,1)',
 		      data: [11, 11, 12, 7, 25, 11, 23,14,40,4,44,25,11,12,14,17,15,17,20,14,11,22,23,24],
 		    }
@@ -22,12 +22,27 @@ const temperatureMonitor=(props)=>{
 						{yAxes: 
 							[{
 	                			ticks: {
+	                				fontColor:"white",
 	                				suggestedMin: 0,
 	                				suggestedMax: 50
 	                			}
-	                		}]
+	                		}],
+	                	xAxes:[{
+	                		ticks: {
+	                			fontColor: "white",
+	                		},
+	                		gridLines: {
+        						zeroLineColor: '#fff'
+        					}
+	                	}]
 	                	},
 	                	maintainAspectRatio: false,
+	                	legend: {
+            				display: true,
+            				labels: {
+                			fontColor: 'rgb(255, 255, 255)'
+            				}
+            			}
 					}}
 				/>
 			</div>
