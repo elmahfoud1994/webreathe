@@ -1,11 +1,11 @@
 .MyModuleDetails{
 	flex:1;
+	flex-basis: auto;
 	display: flex;
 	flex-flow: column;
 	overflow-y: auto;
 }
 .MyModuleStats{
-	flex: 3;
 	display: flex;
 	flex-flow: column;
 }
