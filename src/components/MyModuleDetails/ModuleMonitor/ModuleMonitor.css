@@ -1,13 +1,15 @@
 .MyModuleMonitor{
-	flex: 1;
+	
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	padding: 1%;
-	overflow-y: auto;
+	
 }
 @media(min-width: 520px){
 	.MyModuleMonitor{
+		flex: 1;
+		overflow-y: auto;
 		flex-flow: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
