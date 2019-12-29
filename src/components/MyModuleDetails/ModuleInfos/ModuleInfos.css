@@ -2,7 +2,7 @@
 	background-color: rgb(59, 137, 255);
 	display: flex;
 	flex-flow: column;
-	flex:1;
+	overflow-y: visible;
 }
 .ModuleInfosHeader{
 	flex:1;
