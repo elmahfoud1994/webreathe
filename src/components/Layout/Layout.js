@@ -32,8 +32,9 @@ class Layaout extends Component{
                         <Switch>
                             <Route path="/" exact component={MyModules}/>
                             <Route path="/newmodule" exact component={NewModule} />
-                            <Route path="/:id" exact component={MyModuleDetails} />
                             <Route path="/notifications" exact component={Notifications}/>
+                            <Route path="/:id" exact component={MyModuleDetails} />
+                            
                             
                         </Switch>
                     </div>

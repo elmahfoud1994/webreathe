@@ -1,0 +1,49 @@
+.ModuleInfos{
+	background-color: rgb(59, 137, 255);
+	display: flex;
+	flex-flow: column;
+}
+.ModuleInfosHeader{
+	flex:1;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.ModuleInfosHeader img{
+	height: 50%;
+	width: 50%;
+	margin-bottom: 2%;
+}
+.ModuleInfosHeader h3{
+	color: white;
+	margin: 0;
+	font-size: 2em;
+	
+}
+.ModuleInfosBody{
+	flex:3;
+	overflow-y: auto;
+	display: flex;
+	flex-flow: column;
+	padding: 5%;
+}
+
+
+
+.ModuleInfosBody  h3{
+	font-weight: normal;
+	background-color:rgba(20,20,20,0.3);
+	border-radius: 5px;
+	padding: 10px;
+	color:white;
+	margin:0;
+	margin-bottom: 3%;
+
+}
+
+@media(min-width: 520px){
+	.ModuleInfos{
+	flex:1;
+	}
+}
