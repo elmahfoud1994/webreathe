@@ -1,6 +1,4 @@
 .MyModuleDetails{
-	display: flex;
-	flex-flow: column;
 	overflow-y: auto;
 }
 .MyModuleStats{
