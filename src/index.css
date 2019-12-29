@@ -11,13 +11,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: blue;
 
 }
 #root{
   height: 100%;
   display: flex;
   flex-flow: column;
-
+  background-color: black;
 
 }
 code {

@@ -7,5 +7,6 @@ padding: 0;
 display: flex;
 flex-flow: column;
 overflow-y: hidden;
+background-color: red;
 }
 
