@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "dbc47e18adb5b0662b7be979f139a3ad",
+    "revision": "1fb93ea414333257c13e6d41ec50856b",
     "url": "/webreathe/index.html"
   },
   {
-    "revision": "17e08bd54afc655b30a6",
-    "url": "/webreathe/static/css/main.9183aa5a.chunk.css"
+    "revision": "88615ed9861b46f618f3",
+    "url": "/webreathe/static/css/main.e0fa3501.chunk.css"
   },
   {
     "revision": "5ec3cfeee8b8b0819175",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/webreathe/static/js/2.dee833fd.chunk.js.LICENSE"
   },
   {
-    "revision": "17e08bd54afc655b30a6",
+    "revision": "88615ed9861b46f618f3",
     "url": "/webreathe/static/js/main.e9fb7a8b.chunk.js"
   },
   {
