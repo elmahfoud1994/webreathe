@@ -1,9 +1,10 @@
 .MyModuleMonitor{
-	display: flex;
 	flex:1;
+	display: flex;
 	flex-flow: column;
 	align-items: center;
 	padding: 1%;
+	
 }
 @media(min-width: 520px){
 	.MyModuleMonitor{

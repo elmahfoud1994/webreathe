@@ -5,6 +5,7 @@
 	overflow-y: auto;
 }
 .MyModuleStats{
+	flex:1;
 	display: flex;
 	flex-flow: column;
 }
@@ -36,5 +37,5 @@
 	}
 	.MyModuleStats{
 	flex:3;
-}
+	}
 }

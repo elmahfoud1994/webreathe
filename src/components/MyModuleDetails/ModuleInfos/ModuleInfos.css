@@ -2,7 +2,7 @@
 	background-color: rgb(59, 137, 255);
 	display: flex;
 	flex-flow: column;
-	height: 100%;
+	flex:1;
 }
 .ModuleInfosHeader{
 	flex:1;
@@ -41,10 +41,4 @@
 	margin:0;
 	margin-bottom: 3%;
 
-}
-
-@media(min-width: 520px){
-	.ModuleInfos{
-	flex:1;
-	}
 }
