@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/webreathe/static/css/main.f94e0650.chunk.css",
-    "main.js": "/webreathe/static/js/main.e9fb7a8b.chunk.js",
-    "main.js.map": "/webreathe/static/js/main.e9fb7a8b.chunk.js.map",
+    "main.css": "/webreathe/static/css/main.55c5fda2.chunk.css",
+    "main.js": "/webreathe/static/js/main.394c27c9.chunk.js",
+    "main.js.map": "/webreathe/static/js/main.394c27c9.chunk.js.map",
     "runtime-main.js": "/webreathe/static/js/runtime-main.c80820c6.js",
     "runtime-main.js.map": "/webreathe/static/js/runtime-main.c80820c6.js.map",
     "static/js/2.dee833fd.chunk.js": "/webreathe/static/js/2.dee833fd.chunk.js",
     "static/js/2.dee833fd.chunk.js.map": "/webreathe/static/js/2.dee833fd.chunk.js.map",
     "index.html": "/webreathe/index.html",
-    "precache-manifest.5f0a1094c42f98d3c0ab92794d47069f.js": "/webreathe/precache-manifest.5f0a1094c42f98d3c0ab92794d47069f.js",
+    "precache-manifest.caff4e877376dfe9d4e345e0eee4adcd.js": "/webreathe/precache-manifest.caff4e877376dfe9d4e345e0eee4adcd.js",
     "service-worker.js": "/webreathe/service-worker.js",
-    "static/css/main.f94e0650.chunk.css.map": "/webreathe/static/css/main.f94e0650.chunk.css.map",
+    "static/css/main.55c5fda2.chunk.css.map": "/webreathe/static/css/main.55c5fda2.chunk.css.map",
     "static/js/2.dee833fd.chunk.js.LICENSE": "/webreathe/static/js/2.dee833fd.chunk.js.LICENSE",
     "static/media/iot.png": "/webreathe/static/media/iot.40217429.png",
     "static/media/moduleInfos.svg": "/webreathe/static/media/moduleInfos.e3381599.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.c80820c6.js",
     "static/js/2.dee833fd.chunk.js",
-    "static/css/main.f94e0650.chunk.css",
-    "static/js/main.e9fb7a8b.chunk.js"
+    "static/css/main.55c5fda2.chunk.css",
+    "static/js/main.394c27c9.chunk.js"
   ]
 }
