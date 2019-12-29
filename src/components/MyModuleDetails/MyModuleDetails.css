@@ -1,6 +1,5 @@
 .MyModuleDetails{
 	flex:1;
-	flex-basis: auto;
 	display: flex;
 	flex-flow: column;
 	overflow-y: auto;
@@ -9,7 +8,27 @@
 	display: flex;
 	flex-flow: column;
 }
-
+.deleteButtonContainer{
+		display: flex;
+		flex-flow: row;
+		justify-content: flex-start;
+		padding: 0.5%;
+}
+.deleteButtonContainer button{
+	background-color: rgb(255, 33, 37);
+	color:white;
+	border: 1px solid rgb(255, 33, 37);
+	outline: none;
+	height: 3rem;
+	width: 3rem;
+	font-size: 2em;
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: 50%;
+}
 @media(min-width: 520px){
 	.MyModuleDetails{
 		flex-flow: row;
@@ -17,5 +36,5 @@
 	}
 	.MyModuleStats{
 	flex:3;
-	}
+}
 }

@@ -1,8 +1,8 @@
 .ModuleInfos{
-	flex:1;
 	background-color: rgb(59, 137, 255);
 	display: flex;
 	flex-flow: column;
+	height: 100%;
 }
 .ModuleInfosHeader{
 	flex:1;
@@ -20,14 +20,18 @@
 	color: white;
 	margin: 0;
 	font-size: 2em;
+	
 }
 .ModuleInfosBody{
 	flex:3;
+	overflow-y: auto;
 	display: flex;
 	flex-flow: column;
 	padding: 5%;
-	overflow-y: auto;
 }
+
+
+
 .ModuleInfosBody  h3{
 	font-weight: normal;
 	background-color:rgba(20,20,20,0.3);
@@ -37,4 +41,10 @@
 	margin:0;
 	margin-bottom: 3%;
 
+}
+
+@media(min-width: 520px){
+	.ModuleInfos{
+	flex:1;
+	}
 }
