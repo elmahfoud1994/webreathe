@@ -1,4 +1,5 @@
 .ModuleInfos{
+	flex:1;
 	background-color: rgb(59, 137, 255);
 	display: flex;
 	flex-flow: column;
@@ -43,9 +44,6 @@
 }
 
 @media(min-width: 520px){
-	.ModuleInfos{
-	flex:1;
-	}
 	.ModuleInfosBody{
 		overflow-y: auto;
 	}
