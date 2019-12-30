@@ -2,4 +2,10 @@
 	flex:9;
 	padding: 1%;
 	overflow-y: auto;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	
 }

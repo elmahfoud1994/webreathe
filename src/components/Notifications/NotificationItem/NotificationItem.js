@@ -1,29 +1,18 @@
 import React from 'react'
 import './NotificationItem.css'
-import {IoIosWarning,IoIosAlert}  from 'react-icons/io'
-import {MdDelete} from 'react-icons/md'
-import {FaEye} from 'react-icons/fa'
-const notificationItem=(props)=>{
-	
-	let classes=["NotificationType","NotificationTypeWarning"]
-	if(props.type==="danger") classes=["NotificationType","NotificationTypeDanger"]
-	return(
-	<div className="NotificationItem">
-		<div className={classes.join(" ")}>
-			{props.type==="warning"?<IoIosWarning />:<IoIosAlert/>}
+import notificationImage from '../../../assets/images/notification.svg'
+const notificationItem=(props)=>(
+	<a className="NotificationItem">
+		<div className="NotificationItemImage">
+			<img src={notificationImage}  />
 		</div>
-		<div className="NotificationContent">
-			<p>{props.message}</p>
+		<div className="NotificationItemHeader">
+			<h2>{props.type}</h2>
 		</div>
-		<div className="NotificationActions">
-			<button className="NotificationViewAction">
-				<FaEye/>
-			</button>
-			<button className="NotificationDeleteAction">
-				<MdDelete />
-			</button>
+		<div  className="NotificationItemBody">
+			<p>{props.description}</p>
+			<span>Created at: {props.createdAt}</span>
 		</div>
-	</div>
+	</a>	
 	)
-}
 export default notificationItem

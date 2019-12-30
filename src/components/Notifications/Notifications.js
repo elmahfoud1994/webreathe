@@ -1,6 +1,5 @@
 import React,{Component} from 'react'
 import './Notifications.css'
-import NotificationsHeader from './NotificationsHeader/NotificationsHeader'
 import NotificationBody from './NotificationsBody/NotificationsBody'
 import PaginationItems from '../MyModules/PaginationItems/PaginationItems'
 class Notifications extends Component{
@@ -8,28 +7,34 @@ class Notifications extends Component{
 		count:2,
 		notifications:[
 			{
-				message:"battery is low",
-				type:"warning"
+				description:"battery is low",
+				type:"Temperatue",
+				createdAt:"02/12/2019"
 			},
 			{
-				message:"no one cares",
-				type:"danger"
+				description:"no one cares",
+				type:"Activity Duration",
+				createdAt:"02/02/2019"
 			},
 			{
-				message:"go to sleep begra",
-				type:"warning"
+				description:"go to sleep begra",
+				type:"Activity State",
+				createdAt:"02/03/2017"
 			},
 			{
-				message:"i dont care",
-				type:"warning"
+				description:"i dont care",
+				type:"Data Exchange",
+				createdAt:"01/01/2020"
 			},
 			{
-				message:"no one understands",
-				type:"danger"
+				description:"no one understands",
+				type:"Activity State",
+				createdAt:"02/12/2019"
 			},
 			{
-				message:"bary is crat",
-				type:"danger"
+				description:"bary is crat",
+				type:"Activity State",
+				createdAt:"02/12/2019"
 			},
 
 		],
@@ -38,7 +43,6 @@ class Notifications extends Component{
 	render(){
 		return(
 			<div className="Notifications">
-				<NotificationsHeader />
 				<NotificationBody notifications={this.state.notifications} />
 				{this.state.count?<PaginationItems count={this.state.count}/>:null}
 			</div>

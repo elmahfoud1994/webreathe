@@ -12,18 +12,6 @@
 	background-color: rgba(53,123,229);
 	cursor: pointer;
 }
-.MyModule:hover{
-	background-color: white;
-}
-.MyModule:hover h2{
-	color: rgb(20,20,20);
-}
-.MyModule:hover span{
-	color: rgb(20,20,20);
-}
-.MyModule:hover p{
-	color: black;
-}
 .MyModule p{
 	margin: 0;
 	color: white;
@@ -54,4 +42,18 @@
 	justify-content: center;
 	padding-right: 2%;
 	color:white;
+}
+@media(min-width: 520px){
+	.MyModule:hover{
+	background-color: white;
+	}
+	.MyModule:hover h2{
+		color: rgb(20,20,20);
+	}
+	.MyModule:hover span{
+		color: rgb(20,20,20);
+	}
+	.MyModule:hover p{
+		color: black;
+	}
 }

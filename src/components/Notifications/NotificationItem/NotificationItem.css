@@ -1,57 +1,71 @@
 .NotificationItem{
-	height: 10%;
-	margin-bottom: 5px;
+	height: 20rem;
+	width: 20rem;
 	display: flex;
-	flex-flow: row;
-	background-color: white;
+	flex-flow: column;
+	background-color: rgb(247, 253, 255);
+	margin-bottom: 2%;
+	box-shadow: 5px 5px 5px 1px rgb(184, 184, 184);
 	border-radius: 5px;
+	cursor: pointer;
 }
-.NotificationType{
+
+.NotificationItemImage {
+	flex:2;
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+.NotificationItemImage img{
+	height: 10rem;
+	width: 20rem;
+}
+.NotificationItemHeader{
 	flex:1;
 	display: flex;
 	flex-flow: column;
 	justify-content: center;
 	align-items: center;
-	font-size: 2em;
+	color: rgb(53,123,229);	
+
 }
-.NotificationTypeWarning{
-	color:rgb(255, 248, 41);
-}
-.NotificationTypeDanger{
-	color: rgb(255, 33, 37);
-}
-.NotificationContent{
-	flex:13;
+.NotificationItemHeader h2{
 	margin: 0;
-	box-sizing: border-box;
-	overflow-y: hidden;
+	padding: 0;
+}
+.NotificationItemBody{
+	flex:1;
+	overflow: hidden;
 	display: flex;
-	padding: 1%;
+	flex-flow: column;
+} 
+.NotificationItemBody p{
+	flex:1;
+	padding: 1% 5%;
+	margin: 0;
+	color:#999;
+	font-size: 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	
+} 
+.NotificationItemBody span{
+	flex: 1;
+	display: flex;
 	flex-flow: column;
 	justify-content: center;
-}
-.NotificationContent p{
-	color: #999;
+	align-items: flex-end;
+	color: rgb(20,20,20);
+	font-size: 0.9em;
+	padding:0 1%;
+	
 }
 
-
-.NotificationActions{
-	flex:1;
-	display: flex;
-	flex-flow: row;
+@media(min-width: 520px){
+	.NotificationItem:hover{
+		background-color: rgb(179, 232, 255);
+	}
 }
-.NotificationActions button{
-	flex:1;
-}
-.NotificationViewAction{
-	background-color: rgb(48, 110, 255);
-	border: 1px solid rgb(48, 110, 255);
-	color: white;
-}
-.NotificationDeleteAction{
-	background-color: rgb(255, 33, 37);
-	border: 1px solid rgb(255, 33, 37);
-	color: white;
-	border-top-right-radius: 5px;
-	border-bottom-right-radius: 5px;
-} 
