@@ -1,26 +1,27 @@
 {
   "files": {
-    "main.css": "/webreathe/static/css/main.f6710240.chunk.css",
-    "main.js": "/webreathe/static/js/main.a2ff77c4.chunk.js",
-    "main.js.map": "/webreathe/static/js/main.a2ff77c4.chunk.js.map",
+    "main.css": "/webreathe/static/css/main.d1eef1e6.chunk.css",
+    "main.js": "/webreathe/static/js/main.08f216e7.chunk.js",
+    "main.js.map": "/webreathe/static/js/main.08f216e7.chunk.js.map",
     "runtime-main.js": "/webreathe/static/js/runtime-main.c80820c6.js",
     "runtime-main.js.map": "/webreathe/static/js/runtime-main.c80820c6.js.map",
-    "static/js/2.b66d7032.chunk.js": "/webreathe/static/js/2.b66d7032.chunk.js",
-    "static/js/2.b66d7032.chunk.js.map": "/webreathe/static/js/2.b66d7032.chunk.js.map",
+    "static/js/2.d60290ea.chunk.js": "/webreathe/static/js/2.d60290ea.chunk.js",
+    "static/js/2.d60290ea.chunk.js.map": "/webreathe/static/js/2.d60290ea.chunk.js.map",
     "index.html": "/webreathe/index.html",
-    "precache-manifest.edcea564f576084f5b729085057dca78.js": "/webreathe/precache-manifest.edcea564f576084f5b729085057dca78.js",
+    "precache-manifest.48593d9be611c8328b0b5e77e7ca675c.js": "/webreathe/precache-manifest.48593d9be611c8328b0b5e77e7ca675c.js",
     "service-worker.js": "/webreathe/service-worker.js",
-    "static/css/main.f6710240.chunk.css.map": "/webreathe/static/css/main.f6710240.chunk.css.map",
-    "static/js/2.b66d7032.chunk.js.LICENSE": "/webreathe/static/js/2.b66d7032.chunk.js.LICENSE",
+    "static/css/main.d1eef1e6.chunk.css.map": "/webreathe/static/css/main.d1eef1e6.chunk.css.map",
+    "static/js/2.d60290ea.chunk.js.LICENSE": "/webreathe/static/js/2.d60290ea.chunk.js.LICENSE",
     "static/media/iot.png": "/webreathe/static/media/iot.40217429.png",
     "static/media/moduleInfos.svg": "/webreathe/static/media/moduleInfos.e3381599.svg",
     "static/media/notification.svg": "/webreathe/static/media/notification.2a8153ef.svg",
+    "static/media/notification1.svg": "/webreathe/static/media/notification1.99bbd081.svg",
     "static/media/webreathe.png": "/webreathe/static/media/webreathe.f8759fa3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c80820c6.js",
-    "static/js/2.b66d7032.chunk.js",
-    "static/css/main.f6710240.chunk.css",
-    "static/js/main.a2ff77c4.chunk.js"
+    "static/js/2.d60290ea.chunk.js",
+    "static/css/main.d1eef1e6.chunk.css",
+    "static/js/main.08f216e7.chunk.js"
   ]
 }
