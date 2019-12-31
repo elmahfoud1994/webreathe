@@ -3,7 +3,7 @@ import './NotificationItem.css'
 import notificationImage from '../../../assets/images/notification.svg'
 import {Link} from 'react-router-dom'
 const notificationItem=(props)=>(
-	<Link to="/webreathe/notifications/10" className="NotificationItem">
+	<Link to="/notifications/10" className="NotificationItem">
 		<div className="NotificationItemImage">
 			<img src={notificationImage}  />
 		</div>
