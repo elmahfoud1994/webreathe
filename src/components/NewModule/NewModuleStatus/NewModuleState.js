@@ -24,7 +24,7 @@ const newModuleStatus=(props)=>(
         </div>
         <div className="messageStatus">
             <span style={{color:props.description.trim().length?"green":"red",marginRight:"1%",marginTop:"1%"}}>{props.description.trim().length?<FaCheck/>:<IoMdCloseCircleOutline/>}</span>
-            <span>{props.description.trim().length?"Module Number is valid":"Please fill the Module Number"}</span>
+            <span>{props.description.trim().length?"Module Description is valid":"Please fill the Module Description"}</span>
         </div>
         <div className="messageStatus">
             <span style={{color:props.form2IsValid?"green":"red",marginRight:"1%",marginTop:"1%"}}>{props.form2IsValid?<FaCheck/>:<IoMdCloseCircleOutline/>}</span>
