@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/webreathe/static/css/main.d1eef1e6.chunk.css",
-    "main.js": "/webreathe/static/js/main.08f216e7.chunk.js",
-    "main.js.map": "/webreathe/static/js/main.08f216e7.chunk.js.map",
+    "main.js": "/webreathe/static/js/main.e20a0704.chunk.js",
+    "main.js.map": "/webreathe/static/js/main.e20a0704.chunk.js.map",
     "runtime-main.js": "/webreathe/static/js/runtime-main.c80820c6.js",
     "runtime-main.js.map": "/webreathe/static/js/runtime-main.c80820c6.js.map",
-    "static/js/2.d60290ea.chunk.js": "/webreathe/static/js/2.d60290ea.chunk.js",
-    "static/js/2.d60290ea.chunk.js.map": "/webreathe/static/js/2.d60290ea.chunk.js.map",
+    "static/js/2.c516b977.chunk.js": "/webreathe/static/js/2.c516b977.chunk.js",
+    "static/js/2.c516b977.chunk.js.map": "/webreathe/static/js/2.c516b977.chunk.js.map",
     "index.html": "/webreathe/index.html",
-    "precache-manifest.48593d9be611c8328b0b5e77e7ca675c.js": "/webreathe/precache-manifest.48593d9be611c8328b0b5e77e7ca675c.js",
+    "precache-manifest.e6cd42aa9f1383afc6eed15fc3646f8d.js": "/webreathe/precache-manifest.e6cd42aa9f1383afc6eed15fc3646f8d.js",
     "service-worker.js": "/webreathe/service-worker.js",
     "static/css/main.d1eef1e6.chunk.css.map": "/webreathe/static/css/main.d1eef1e6.chunk.css.map",
-    "static/js/2.d60290ea.chunk.js.LICENSE": "/webreathe/static/js/2.d60290ea.chunk.js.LICENSE",
+    "static/js/2.c516b977.chunk.js.LICENSE": "/webreathe/static/js/2.c516b977.chunk.js.LICENSE",
     "static/media/iot.png": "/webreathe/static/media/iot.40217429.png",
     "static/media/moduleInfos.svg": "/webreathe/static/media/moduleInfos.e3381599.svg",
     "static/media/notification.svg": "/webreathe/static/media/notification.2a8153ef.svg",
@@ -20,8 +20,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.c80820c6.js",
-    "static/js/2.d60290ea.chunk.js",
+    "static/js/2.c516b977.chunk.js",
     "static/css/main.d1eef1e6.chunk.css",
-    "static/js/main.08f216e7.chunk.js"
+    "static/js/main.e20a0704.chunk.js"
   ]
 }
