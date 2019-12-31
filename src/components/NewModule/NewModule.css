@@ -1,17 +1,26 @@
+.NewModuleContainer{
+    width: 100%;
+    background-color: rgba(53,123,229);
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    padding: 5%;
+}
 .NewModule{
-        position: fixed;
+
+        position: relative;
         display: flex;
         flex-flow:column;
         background-color: rgb(247, 255, 249);
-        min-height: 80%;
+
+        min-height: 90%;
         width: 90%;
         padding-top: 16px;
-        left: 5%;
-        top: 4rem;
         border-radius: 25px;
-        box-sizing: border-box;
-        transition: all 0.3s ease-out;
-    }
+        margin: 0 auto;
+       
+
+}
     .ModuleHeader{
         padding-left:20px;
         flex:1;
@@ -39,7 +48,7 @@
         display: flex;
         flex-flow: row;
         width:100%;
-       
+        overflow-y: hidden;
     }
     .ModuleBody .LeftSide{
         display: flex;
@@ -62,13 +71,12 @@
         
     }
     .ModuleBody .RightSide{
+        flex:4;
         display: flex;
         flex-flow: column;
         margin:0;
         padding: 0;
-        flex:4;
         border-bottom-right-radius: 25px;
         background-color: rgb(235, 245, 252);
-        overflow-y: auto;
     }
 }

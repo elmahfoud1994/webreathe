@@ -1,47 +1,6 @@
 .NotificationDetails{
 	overflow-y: auto;
 }
-
-.NotificationDetail{
-	background-color: rgb(255,140,0,0.8);
-	display: flex;
-	flex-flow: column;
-}
-.NotificationDetailHeader{
-	flex:2;
-	display: flex;
-	flex-flow: column;
-	justify-content: center;
-	align-items: center;
-	overflow-y: hidden;
-}
-.NotificationDetailHeader img{
-	height: 50%;
-	width: 50%;
-	margin-bottom: 2%;
-}
-.NotificationDetailHeader h3{
-	color: white;
-	margin: 0;
-	font-size: 2em;
-	
-}
-.NotificationDetailBody{
-	flex:3;
-	display: flex;
-	flex-flow: column;
-	padding: 5%;
-}
-.NotificationDetailBody  h3{
-	font-weight: normal;
-	background-color:rgba(20,20,20,0.3);
-	border-radius: 5px;
-	padding: 10px;
-	color:white;
-	margin:0;
-	margin-bottom: 3%;
-
-}
 @media(min-width: 520px){
 	.NotificationDetails{
 		display: flex;

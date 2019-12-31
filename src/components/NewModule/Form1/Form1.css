@@ -105,7 +105,8 @@
     cursor: not-allowed;
 }
 @media(min-width: 530px){
-    .Form1Continue{
-        border-bottom-right-radius: 0;
+    .Form1Body button{
+        border-bottom-right-radius: 0px;
+        
     }
 }

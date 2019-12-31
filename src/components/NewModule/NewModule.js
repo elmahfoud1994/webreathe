@@ -101,7 +101,8 @@ class NewModule extends Component{
         }
     }
 	render(){
-		return (
+		return (    
+                    <div className="NewModuleContainer">
         				<div className="NewModule"> 
             				<div className="ModuleHeader" >
                 				<h1><MdImportantDevices/></h1>
@@ -118,7 +119,7 @@ class NewModule extends Component{
                 				</div>
            					</div>
         				</div>
-   				 	
+   				 	</div>
 			)
 	}
     
