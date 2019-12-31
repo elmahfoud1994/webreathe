@@ -3,10 +3,10 @@
 	margin-right: 0.2%;
 	border-radius: 5px;
 	display: flex;
-	border:1px solid rgb(13, 17, 64);
+	border:1px solid rgb(53,123,229);
 	outline: none;
 	color:white;
-	background-color:rgb(13, 17, 64);
+	background-color:rgba(53,123,229);
 	cursor: pointer;
 }
 .PaginationItem:hover{

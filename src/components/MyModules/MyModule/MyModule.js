@@ -2,7 +2,7 @@ import React from 'react'
 import './MyModule.css'
 import {Link} from "react-router-dom";
 const myModule=(props)=>(
-	<Link className="MyModule" to="/12" >
+	<Link className="MyModule" to="/webreathe/12" >
 		<div className="MyModuleHeading">
 			<h2>{props.title}</h2>
 		</div>
