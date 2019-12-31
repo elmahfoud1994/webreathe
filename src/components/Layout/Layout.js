@@ -31,11 +31,12 @@ class Layaout extends Component{
                     
                      <div className="Main" >
                         <Switch>
+                            <Route path="/webreathe/" exact component={MyModules}/>
+                            <Route path="/webreathe/newmodule" exact component={NewModule} />
+                            <Route path="/webreathe/notifications" exact component={Notifications}/>
+                            <Route path="/webreathe/:id" exact component={MyModuleDetails} />
+                            <Route path="/webreathe/notifications/:id" exact component={NotificationDetails} />
                             <Route path="/" exact component={MyModules}/>
-                            <Route path="/newmodule" exact component={NewModule} />
-                            <Route path="/notifications" exact component={Notifications}/>
-                            <Route path="/:id" exact component={MyModuleDetails} />
-                            <Route path="/notifications/:id" exact component={NotificationDetails} />
                             
                         </Switch>
                     </div>
