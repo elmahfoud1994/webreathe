@@ -4,6 +4,7 @@ import NewModule from '../NewModule/NewModule'
 import MyModules from '../MyModules/MyModules'
 import MyModuleDetails from '../MyModuleDetails/MyModuleDetails'
 import Notifications from '../Notifications/Notifications'
+import NotificationDetails from '../NotificationDetails/NotificationDetails'
 import Aux from '../../hoc/Auxilary'
 import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
 
@@ -34,7 +35,7 @@ class Layaout extends Component{
                             <Route path="/newmodule" exact component={NewModule} />
                             <Route path="/notifications" exact component={Notifications}/>
                             <Route path="/:id" exact component={MyModuleDetails} />
-                            
+                            <Route path="/notifications/:id" exact component={NotificationDetails} />
                             
                         </Switch>
                     </div>

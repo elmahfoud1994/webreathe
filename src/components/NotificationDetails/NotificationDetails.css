@@ -1,9 +1,13 @@
-.ModuleInfos{
-	background-color: rgb(59, 137, 255);
+.NotificationDetails{
+	overflow-y: auto;
+}
+
+.NotificationDetail{
+	background-color: rgb(255,140,0,0.8);
 	display: flex;
 	flex-flow: column;
 }
-.ModuleInfosHeader{
+.NotificationDetailHeader{
 	flex:2;
 	display: flex;
 	flex-flow: column;
@@ -11,24 +15,24 @@
 	align-items: center;
 	overflow-y: hidden;
 }
-.ModuleInfosHeader img{
+.NotificationDetailHeader img{
 	height: 50%;
 	width: 50%;
 	margin-bottom: 2%;
 }
-.ModuleInfosHeader h3{
+.NotificationDetailHeader h3{
 	color: white;
 	margin: 0;
 	font-size: 2em;
 	
 }
-.ModuleInfosBody{
+.NotificationDetailBody{
 	flex:3;
 	display: flex;
 	flex-flow: column;
 	padding: 5%;
 }
-.ModuleInfosBody  h3{
+.NotificationDetailBody  h3{
 	font-weight: normal;
 	background-color:rgba(20,20,20,0.3);
 	border-radius: 5px;
@@ -39,10 +43,15 @@
 
 }
 @media(min-width: 520px){
-	.ModuleInfos{
+	.NotificationDetails{
+		display: flex;
+		flex-flow: row;
+		overflow-y: none;
+	}
+	.NotificationDetail{
 		flex:1;
 	}
-	.ModuleInfosBody{
+	.NotificationDetailBody{
 		overflow-y: auto;
 	}
 

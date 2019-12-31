@@ -1,8 +1,9 @@
 import React from 'react'
 import './NotificationItem.css'
 import notificationImage from '../../../assets/images/notification.svg'
+import {Link} from 'react-router-dom'
 const notificationItem=(props)=>(
-	<a className="NotificationItem">
+	<Link to="/notifications/10" className="NotificationItem">
 		<div className="NotificationItemImage">
 			<img src={notificationImage}  />
 		</div>
@@ -13,6 +14,6 @@ const notificationItem=(props)=>(
 			<p>{props.description}</p>
 			<span>Created at: {props.createdAt}</span>
 		</div>
-	</a>	
+	</Link>	
 	)
 export default notificationItem

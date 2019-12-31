@@ -1,9 +1,9 @@
-.ModuleInfos{
-	background-color: rgb(59, 137, 255);
+.NotificationInfos{
+	background-color: rgb(255,140,0,0.8);
 	display: flex;
 	flex-flow: column;
 }
-.ModuleInfosHeader{
+.NotificationInfosHeader{
 	flex:2;
 	display: flex;
 	flex-flow: column;
@@ -11,24 +11,24 @@
 	align-items: center;
 	overflow-y: hidden;
 }
-.ModuleInfosHeader img{
+.NotificationInfosHeader img{
 	height: 50%;
 	width: 50%;
 	margin-bottom: 2%;
 }
-.ModuleInfosHeader h3{
+.NotificationInfosHeader h3{
 	color: white;
 	margin: 0;
 	font-size: 2em;
 	
 }
-.ModuleInfosBody{
+.NotificationInfosBody{
 	flex:3;
 	display: flex;
 	flex-flow: column;
 	padding: 5%;
 }
-.ModuleInfosBody  h3{
+.NotificationInfosBody  h3{
 	font-weight: normal;
 	background-color:rgba(20,20,20,0.3);
 	border-radius: 5px;
@@ -39,10 +39,11 @@
 
 }
 @media(min-width: 520px){
-	.ModuleInfos{
+	
+	.NotificationInfos{
 		flex:1;
 	}
-	.ModuleInfosBody{
+	.NotificationInfosBody{
 		overflow-y: auto;
 	}
 

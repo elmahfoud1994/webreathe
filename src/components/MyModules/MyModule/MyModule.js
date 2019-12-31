@@ -1,7 +1,8 @@
 import React from 'react'
 import './MyModule.css'
+import {Link} from "react-router-dom";
 const myModule=(props)=>(
-	<a className="MyModule">
+	<Link className="MyModule" to="/12" >
 		<div className="MyModuleHeading">
 			<h2>{props.title}</h2>
 		</div>
@@ -9,6 +10,6 @@ const myModule=(props)=>(
 			<p>{props.description}</p>
 		</div>
 		<span>created at : {props.createdAt}</span>
-	</a>	
+	</Link>	
 ) 
 export default myModule
