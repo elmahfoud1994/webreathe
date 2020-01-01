@@ -1,7 +1,5 @@
 import React,{Component} from 'react'
 import './NewModule.css'
-import Aux from '../../hoc/Auxilary'
-import BackDrop from '../ui/BackDrop/BackDrop'
 import Form1 from '../NewModule/Form1/Form1'
 import Form2 from '../NewModule/Form2/Form2'
 import NewModuleStatus from '../NewModule/NewModuleStatus/NewModuleState'
