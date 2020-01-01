@@ -1,7 +1,7 @@
 .NotificationsBody{
 	flex:9;
 	padding: 1%;
-	overflow-y: auto;
+	overflow-y: scroll;
 	display: flex;
 	flex-flow: row;
 	justify-content: space-around;
