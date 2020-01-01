@@ -10,7 +10,7 @@ const dropDown=(props)=>{
         <Aux>
         {props.show?<BackDrop closed={props.clicked} />:null}
         <div className={attachedClasses.join(" ")}>
-        		<NavigationItems add={props.add} />          
+        		<NavigationItems clicked={props.clicked} />          
         </div>
         </Aux>
     )

@@ -3,9 +3,9 @@ import NavigationItem from './NavigationItem/NavigationItem'
 import './NavigationItems.css'
 const navigationItems=(props)=>(
     <ul className='NavigationItems'>
-    	<NavigationItem title="New module" link="/webreathe/newmodule"/>
-    	<NavigationItem title="My Modules" link="/webreathe/"/>
-        <NavigationItem title="Notifications" link="/webreathe/notifications"/>
+    	<NavigationItem hide={props.clicked} title="New module" link="/webreathe/newmodule"/>
+    	<NavigationItem hide={props.clicked} title="My Modules" link="/webreathe/"/>
+        <NavigationItem hide={props.clicked} title="Notifications" link="/webreathe/notifications"/>
     </ul>
 )
 export default navigationItems

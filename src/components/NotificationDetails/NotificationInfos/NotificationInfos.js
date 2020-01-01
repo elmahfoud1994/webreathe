@@ -8,7 +8,7 @@ const notificationInfos=(props)=>(
 	<div className="NotificationInfos">
 		<div className="NotificationInfosHeader">
 			<img src={notificationImage} />
-			<h3>Notification Details</h3>
+			<h3>Notification Infos</h3>
 		</div>
 		<div className="NotificationInfosBody">
 			<h3><FiType/> Type : {props.type}</h3>

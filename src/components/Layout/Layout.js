@@ -10,24 +10,12 @@ import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
 
 import './Layout.css'
 class Layaout extends Component{
-    state={
-        addNewModuleVisble:false
-    }
-    showAddNewModuleHandler=()=>{
-        this.setState({
-            addNewModuleVisble:true
-        })
-    }
-    hideAddNewModuleHandler=()=>{
-        this.setState({
-            addNewModuleVisble:false
-        })
-    }
+   
     render(){
         return(
             <Aux>
                <Router >
-                    <Header clicked={this.showAddNewModuleHandler}/>
+                    <Header/>
                     
                      <div className="Main" >
                         <Switch>
@@ -36,7 +24,6 @@ class Layaout extends Component{
                             <Route path="/webreathe/notifications" exact component={Notifications}/>
                             <Route path="/webreathe/:id" exact component={MyModuleDetails} />
                             <Route path="/webreathe/notifications/:id" exact component={NotificationDetails} />
-                            
                         </Switch>
                     </div>
                 </Router>
