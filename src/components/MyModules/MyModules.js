@@ -19,20 +19,23 @@ class MyModules extends Component{
 		this.setState({
 			loading:false,
 			modules:result.modules,
-			count:Math.ceil((result.count ) / 10)
+			count:Math.ceil((result.count ) / 10),
+			error:result.error
 		})
 	}
 	changePageHandler=async(page)=>{
 		this.setState({
 			currentPage:page,
 			loading:true,
-			modules:[]
+			modules:[],
+			error:""
 		})
 		let result=await api.getModules(page)
 		this.setState({
 			loading:false,
 			modules:result.modules,
-			count:Math.ceil((result.count ) / 10)
+			count:Math.ceil((result.count ) / 10),
+			rror:result.error
 		})
 	}
 	render(){
@@ -40,8 +43,8 @@ class MyModules extends Component{
 			<div className="MyModulesContainer">
 
 				<div className="MyModules">
-				{	this.state.loading?<LoadingSprint />:<ErrorMessage/>
-					//this.state.modules.map(module=><MyModule key={module.id} id={module.id} description={module.description} title={module.title} createdAt={module.created_at}/>)
+				{	this.state.loading?<LoadingSprint />:this.state.error?<ErrorMessage errorMessage={this.state.error}/>:
+					this.state.modules.map(module=><MyModule key={module.id} id={module.id} description={module.description} title={module.title} createdAt={module.created_at}/>)
 				}
 				</div>
 				{this.state.count!==1?<PaginationItems currentPage={this.state.currentPage} clicked={this.changePageHandler} count={this.state.count}/>:null}

@@ -1,9 +1,9 @@
 .PaginationItems{
 	display: flex;
 	flex-flow: row;
-	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
 	padding: 1% 10%;
 	flex:0.5;
+	overflow-x: auto;
 }

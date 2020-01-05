@@ -1,10 +1,11 @@
 import React from 'react'
 import './ErrorMessage.css'
-const errorMessage=()=>(
+import errorImage from '../../../assets/images/Error.svg'
+const errorMessage=(props)=>(
 		<div className="ErrorMessage">
-			<img src="https://dashkit.goodthemes.co/assets/img/illustrations/lost.svg"/>
+			<img src={errorImage}/>
 			<h3>Something went wrong</h3>
-			<p>the module not found</p>
+			<p>{props.errorMessage}</p>
 		</div>
 )
 export default errorMessage
