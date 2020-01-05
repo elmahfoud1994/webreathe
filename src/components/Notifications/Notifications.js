@@ -18,26 +18,33 @@ class Notifications extends Component{
 		this.setState({
 			loading:false,
 			notifications:result.notifications,
+			error:result.error,
 			count:Math.ceil((result.count ) / 40)
 		})
 	}
+
 	changePageHandler=async(page)=>{
 		this.setState({
 			currentPage:page,
 			loading:true,
-			notifications:[]
+			notifications:[],
+			error:""
 		})
 		let result=await api.getNotifications(page)
 		this.setState({
 			loading:false,
 			notifications:result.notifications,
-			count:Math.ceil((result.count ) / 40)
+			count:Math.ceil((result.count ) / 40),
+			error:result.error
 		})
+	}
+	changeToSeenHandler=async(id)=>{
+		await api.updateNotificationSeen({id})
 	}
 	render(){
 		return(
 			<div className="Notifications">
-				<NotificationBody notifications={this.state.notifications} loading={this.state.loading} />
+				<NotificationBody notifications={this.state.notifications} error={this.state.error} loading={this.state.loading} changeSeen={this.changeToSeenHandler} />
 				{this.state.count!==1?<PaginationItems currentPage={this.state.currentPage} clicked={this.changePageHandler} count={this.state.count}/>:null}
 			</div>
 		)

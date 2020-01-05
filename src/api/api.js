@@ -5,7 +5,13 @@ const getModules=async(currentPage)=>{
 	try{
 		const response=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/modules?page='+(currentPage-1))
 		const jsonResponse= await response.json()
-		console.log(jsonResponse)
+		if(jsonResponse.errorMessage){
+			return{
+				modules:[],
+				count:0,
+				error:jsonResponse.errorMessage
+			}
+		}
 		return {
 			modules:jsonResponse.modules,
 			count:jsonResponse.count,
@@ -70,10 +76,32 @@ const createNewModule=async(model)=>{
 		return error
 	}
 }
+const updateNotificationSeen=async(model)=>{
+	try{
+		const result=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/notifications', {
+			method: 'POST',
+			headers: {
+				Accept: 'application/json',
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(model),
+		});
+	}
+	catch(error){
+
+	}
+}
 const getNotificationInfos=async(id)=>{
 	try{
 		const response=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/notifications/'+id)
 		const jsonResponse= await response.json()
+		if(jsonResponse.errorMessage){
+			return{
+			module:null,
+			notification:null,
+			error:jsonResponse.errorMessage
+			}
+		}
 		return{
 			module:jsonResponse.module,
 			notification:jsonResponse.notification,
@@ -96,6 +124,13 @@ const getNotifications=async(currentPage)=>{
 		
 		const response=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/notifications?page='+(currentPage-1))
 		const jsonResponse= await response.json()
+		if(jsonResponse.errorMessage){
+			return{
+				notifications:[],
+				count:0,
+				error:jsonResponse.errorMessage
+			}
+		}
 		return {
 			notifications:jsonResponse.notifications,
 			count:jsonResponse.count,
@@ -114,4 +149,4 @@ const getNotifications=async(currentPage)=>{
 
 
 
-export default {getModules,getNotifications,getModuleInfos,getNotificationInfos,createNewModule}
+export default {getModules,getNotifications,getModuleInfos,getNotificationInfos,createNewModule,updateNotificationSeen}

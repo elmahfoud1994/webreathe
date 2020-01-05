@@ -21,7 +21,7 @@ class notificationDetails extends Component{
 	render(){
 		return(
 			<div className="NotificationDetails">
-				{this.state.loading?<LoadSprint2 />:this.state.error?<ErrorMessage />:<Aux>
+				{this.state.loading?<LoadSprint2 />:this.state.error?<ErrorMessage errorMessage={this.state.error} />:<Aux>
 				<NotificationInfos type={this.state.notification && this.state.notification.type} description={this.state.notification && this.state.notification.notificationDescription} createdAt={this.state.notification && this.state.notification.detectedAt} />
 				<ModuleInfos number={this.state.module && this.state.module.number} title={this.state.module && this.state.module.title} type={this.state.module && this.state.module.type} state={this.state.module && this.state.module.state} createdAt={this.state.module && this.state.module.created_at} description={this.state.module && this.state.module.description} />
 				</Aux>}

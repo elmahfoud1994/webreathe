@@ -8,5 +8,6 @@
 		flex-flow: row;
 		overflow-y: none;
 		align-items: center;
+		justify-content: center;
 	}
 }

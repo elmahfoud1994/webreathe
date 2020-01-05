@@ -17,7 +17,8 @@ class NewModule extends Component{
         type:"",
         number:null,
         description:"",
-        form1IsValid:false
+        form1IsValid:false,
+        submitting:false
 	}
 	changephaseHandler=()=>{
 		this.setState((prevState)=>{
@@ -101,6 +102,9 @@ class NewModule extends Component{
     }
      submitHandler=async(e)=>{
        e.preventDefault()
+       this.setState({
+        submitting:true
+       })
        const result=await api.createNewModule({
             title:this.state.name,
             type:this.state.type,
@@ -112,8 +116,19 @@ class NewModule extends Component{
             shouldMonitorActivityDuration:this.state.activityDuration
 
        })
-       if(result) alert("true")
-       else alert("false")
+       console.log(this.props)
+       if(result){
+            this.setState({
+                submitting:false
+            })
+            this.props.history.push('/webreathe')
+       }
+       else {
+        this.setState({
+            submitting:false
+        })
+        alert("something went wrong,please try later")
+        }
     }
 	render(){
 		return (    
@@ -126,7 +141,7 @@ class NewModule extends Component{
             				<div  className="ModuleBody">
                 				<form className="LeftSide">
                     				{this.state.phase2?
-                                        <Form2 navigate={this.changephaseHandler} submit={this.submitHandler}  form1IsValid={this.state.form1IsValid} form2IsValid={this.state.form2IsValid} selectItemsHandler={(item)=>this.selectItemsHandler(item)}  activityDuration={this.state.activityDuration} form2IsValid={this.state.form2IsValid} activityState={this.state.activityState} temperature={this.state.temperature}  dataExchange={this.state.dataExchange} phase={this.state.phase2}/>:
+                                        <Form2 navigate={this.changephaseHandler} submit={this.submitHandler} submitting={this.state.submitting} form1IsValid={this.state.form1IsValid} form2IsValid={this.state.form2IsValid} selectItemsHandler={(item)=>this.selectItemsHandler(item)}  activityDuration={this.state.activityDuration} form2IsValid={this.state.form2IsValid} activityState={this.state.activityState} temperature={this.state.temperature}  dataExchange={this.state.dataExchange} phase={this.state.phase2}/>:
                                         <Form1 navigate={this.changephaseHandler} form1IsValid={this.state.form1IsValid} form2IsValid={this.state.form2IsValid} name={this.state.name} type={this.state.type} number={this.state.number} description={this.state.description} form1Handler={(item,text)=>this.form1Handler(item,text)} phase={this.state.phase2}/>}
                 				</form>
                 				<div className="RightSide">

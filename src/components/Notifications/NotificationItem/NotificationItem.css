@@ -11,6 +11,29 @@
 	text-decoration: none;
 }
 
+.ActiveNotification{
+	animation-name: colorChange;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes colorChange {
+    0% {
+        background: white;    
+    }
+    25% {
+        background: rgb(179, 232, 255);   
+    }
+    50% {
+        background: white;   
+    }
+    75% {
+        background: rgb(179, 232, 255);   
+    }
+    100% {
+        background:  white;
+    }
+}
+
 .NotificationItemImage {
 	flex:2;
 	display: flex;

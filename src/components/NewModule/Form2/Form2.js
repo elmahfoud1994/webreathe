@@ -1,6 +1,7 @@
 import React from 'react'
 import Aux from '../../../hoc/Auxilary'
 import FormHeader from '../FormHeader/FormHeader'
+import LoadSprint2 from '../../ui/LoadSprint2/LoadSprint2'
 import './Form2.css'
 import {FaTemperatureHigh,FaExchangeAlt} from 'react-icons/fa'
 import {GoGraph} from 'react-icons/go'
@@ -9,6 +10,7 @@ import {GiSandsOfTime} from 'react-icons/gi'
 const form2 =(props)=>(
 			<Aux>
        			<div className="Form2Body">
+       			{   !props.submitting? <Aux>
 	       			<FormHeader navigate={props.navigate} phase={props.phase} form2IsValid={props.form2IsValid} form1IsValid={props.form1IsValid}/>
 	       			<p>Please select at least one item to monitor.</p>
 	       			<div className="ItemsContainer">
@@ -29,9 +31,16 @@ const form2 =(props)=>(
 		       				<span style={{color:props.dataExchange?"white":""}} className="itemLabel">Data Exchange</span>
 		       			</a>
 	       			</div>
-	       			<button disabled={!props.form1IsValid || !props.form2IsValid} className="SubmitButton" onClick={(e)=>props.submit(e)}>
+	       			<button disabled={!props.form1IsValid || !props.form2IsValid || props.submitting} className="SubmitButton" onClick={(e)=>props.submit(e)}>
 	       				submit
 	       			</button>
+	       			</Aux>
+	       			:
+	       			<div style={{width:"100%",height:"100%"}}>
+	       					<LoadSprint2 />
+	       			</div>
+	       		}
+	       			
        			</div>
     		</Aux>
 			)
