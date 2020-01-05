@@ -7,12 +7,10 @@
 		display: flex;
 		flex-flow: row;
 		overflow-y: none;
+		justify-content: center;
+		align-items: center;
+	
 	}
-	.NotificationDetail{
-		flex:1;
-	}
-	.NotificationDetailBody{
-		overflow-y: auto;
-	}
+	
 
 }

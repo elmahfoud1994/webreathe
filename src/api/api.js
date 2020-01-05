@@ -25,6 +25,15 @@ const getModuleInfos=async(id)=>{
 	try{
 		const response=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/modules/'+id)
 		const jsonResponse= await response.json()
+		if(jsonResponse.errorMessage){
+			return{
+				module:null,
+				temperatureHistory:[],
+				activityStateHistory:[],
+				dataExchangeHistory:[],
+				error:jsonResponse.errorMessage
+			}
+		}
 		return{
 			module:jsonResponse.module,
 			temperatureHistory:jsonResponse.temperatureHistory,
@@ -35,12 +44,13 @@ const getModuleInfos=async(id)=>{
 	}
 	catch(error){
 		return{
-			module:null,
-			temperatureHistory:[],
-			activityStateHistory:[],
-			dataExchangeHistory:[],
-			error:error.message
-		}
+				module:null,
+				temperatureHistory:[],
+				activityStateHistory:[],
+				dataExchangeHistory:[],
+				error:error.message
+			}
+		
 	}
 }
 const createNewModule=async(model)=>{
@@ -71,10 +81,11 @@ const getNotificationInfos=async(id)=>{
 		}
 	}
 	catch(error){
+
 		return{
 			module:null,
 			notification:null,
-			error:error.message
+			error:error
 		}
 	}
 }
