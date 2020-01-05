@@ -2,7 +2,9 @@ import React,{Component} from 'react'
 import './Notifications.css'
 import NotificationBody from './NotificationsBody/NotificationsBody'
 import PaginationItems from '../MyModules/PaginationItems/PaginationItems'
+
 import api from '../../api/api'
+
 class Notifications extends Component{
 	state={
 		count:1,
@@ -16,7 +18,7 @@ class Notifications extends Component{
 		this.setState({
 			loading:false,
 			notifications:result.notifications,
-			count:Math.ceil((result.count ) / 10)
+			count:Math.ceil((result.count ) / 40)
 		})
 	}
 	changePageHandler=async(page)=>{
@@ -29,13 +31,13 @@ class Notifications extends Component{
 		this.setState({
 			loading:false,
 			notifications:result.notifications,
-			count:Math.ceil((result.count ) / 10)
+			count:Math.ceil((result.count ) / 40)
 		})
 	}
 	render(){
 		return(
 			<div className="Notifications">
-				<NotificationBody notifications={this.state.notifications} />
+				<NotificationBody notifications={this.state.notifications} loading={this.state.loading} />
 				{this.state.count!==1?<PaginationItems currentPage={this.state.currentPage} clicked={this.changePageHandler} count={this.state.count}/>:null}
 			</div>
 		)
