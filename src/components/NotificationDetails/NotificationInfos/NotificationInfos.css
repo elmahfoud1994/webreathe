@@ -1,5 +1,6 @@
 .NotificationInfos{
 	background-color: rgb(255,140,0,0.8);
+	height: 100%;
 	display: flex;
 	flex-flow: column;
 }

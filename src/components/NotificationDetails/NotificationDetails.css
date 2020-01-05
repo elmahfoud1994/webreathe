@@ -1,5 +1,6 @@
 .NotificationDetails{
 	overflow-y: auto;
+	width: 100%;
 }
 @media(min-width: 520px){
 	.NotificationDetails{
