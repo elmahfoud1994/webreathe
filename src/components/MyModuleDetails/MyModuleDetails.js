@@ -1,14 +1,31 @@
-import React from 'react'
+import React,{Component} from 'react'
 import './MyModuleDetails.css'
+import api from '../../api/api'
 import ModuleInfos from './ModuleInfos/ModuleInfos'
 import ModuleMonitor from './ModuleMonitor/ModuleMonitor'
-import {MdDelete} from 'react-icons/md'
-const myModuleDetails=(props)=>(
-	<div className="MyModuleDetails">
-		<ModuleInfos title="New device" type="Smart tv" state="On" createdAt='02/12/1994 14:20' description="this is a smart tv that allows users to wach their best tv shows while sleeping" />
-		<div className="MyModuleStats">
-			<ModuleMonitor/>
-		</div>
-	</div>
-)
-export default myModuleDetails
+
+
+class MyModuleDetails extends Component{
+    state={
+        module:null,
+        temperatureHistory:[],
+        activityStateHistory:[],
+        dataExchangeHistory:[],
+        error:""
+    }
+    async componentDidMount(){
+       let result= await api.getModuleInfos(this.props.match.params.id)
+       this.setState(result)
+    }
+    render(){
+        return(
+            <div className="MyModuleDetails">
+                <ModuleInfos title={this.state.module&&this.state.module.title} type={this.state.module&&this.state.module.type} state={this.state.module&&this.state.module.type} createdAt={this.state.module&&this.state.module.created_at} description={this.state.module&&this.state.module.description} />
+                    <div className="MyModuleStats">
+                        <ModuleMonitor shouldMonitorDuration={this.state.module&& this.state.module.shouldMonitorActivityDuration} temperatureHistory={this.state.temperatureHistory} activityStateHistory={this.state.activityStateHistory} dataExchangeHistory={this.state.dataExchangeHistory}/>
+                    </div>
+            </div>
+            )
+    }
+}
+export default MyModuleDetails

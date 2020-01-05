@@ -3,30 +3,47 @@ import './MyModules.css'
 import MyModule from './MyModule/MyModule'
 import iotImage from '../../assets/images/iot.png'
 import PaginationItems from './PaginationItems/PaginationItems'
+import api from '../../api/api'
+import LoadingSprint from '../ui/LoadingSprint/LoadingSprint'
 class MyModules extends Component{
 	state={
-		modules:[
-		{description:"i am hay  ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		{description:"i am begra ,i am responsible of creating a fully finctional software",title:"Cow",createdAt:"2013"},
-		]
+		loading:true,
+		modules:[],
+		count:1,
+		currentPage:1,
+		error:""
+	}
+	async componentDidMount(){
+		let result=await api.getModules(this.state.currentPage)
+		this.setState({
+			loading:false,
+			modules:result.modules,
+			count:Math.ceil((result.count ) / 10)
+		})
+	}
+	changePageHandler=async(page)=>{
+		this.setState({
+			currentPage:page,
+			loading:true,
+			modules:[]
+		})
+		let result=await api.getModules(page)
+		this.setState({
+			loading:false,
+			modules:result.modules,
+			count:Math.ceil((result.count ) / 10)
+		})
 	}
 	render(){
 		return(
 			<div className="MyModulesContainer">
+
 				<div className="MyModules">
-				{
-					this.state.modules.map(module=><MyModule description={module.description} title={module.title} createdAt={module.createdAt}/>)
+				{	this.state.loading?<LoadingSprint />:
+					this.state.modules.map(module=><MyModule key={module.id} id={module.id} description={module.description} title={module.title} createdAt={module.created_at}/>)
 				}
 				</div>
-				<PaginationItems count={5}/>
+				{this.state.count!==1?<PaginationItems currentPage={this.state.currentPage} clicked={this.changePageHandler} count={this.state.count}/>:null}
 			</div>
 		)
 	}

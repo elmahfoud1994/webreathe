@@ -8,10 +8,10 @@ import TemperatureMonitor from './TemperatureMonitor/TemperatureMonitor'
 
 const moduleMonitor=(props)=>(
 	<div className="MyModuleMonitor">
-    <ActivityDurationMonitor />
-		<ActivityStateMonitor />
-    <TemperatureMonitor/>
-    <DataMonitor />
+		{props.shouldMonitorDuration ? <ActivityDurationMonitor durationList={props.activityStateHistory}  /> :null }
+		{props.activityStateHistory.length ? <ActivityStateMonitor activityStateList={props.activityStateHistory}/> : null}
+		{props.temperatureHistory.length ? <TemperatureMonitor temperatureList={props.temperatureHistory}/> :null }
+		{props.dataExchangeHistory.length ? <DataMonitor dataList={props.dataExchangeHistory} /> : null }
 	</div>
-)
+	)
 export default moduleMonitor

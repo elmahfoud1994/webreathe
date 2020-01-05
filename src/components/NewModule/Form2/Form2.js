@@ -29,7 +29,7 @@ const form2 =(props)=>(
 		       				<span style={{color:props.dataExchange?"white":""}} className="itemLabel">Data Exchange</span>
 		       			</a>
 	       			</div>
-	       			<button disabled={!props.form1IsValid || !props.form2IsValid} className="SubmitButton" onClick={()=>alert("submited")}>
+	       			<button disabled={!props.form1IsValid || !props.form2IsValid} className="SubmitButton" onClick={(e)=>props.submit(e)}>
 	       				submit
 	       			</button>
        			</div>

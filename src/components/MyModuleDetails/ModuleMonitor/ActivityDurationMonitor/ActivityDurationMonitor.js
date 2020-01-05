@@ -1,10 +1,16 @@
 import React from 'react'
 import './ActivityDurationMonitor.css'
 import { Doughnut } from 'react-chartjs-2';
-const activityDurationMonitor=()=>{
+const activityDurationMonitor=(props)=>{
+	let activeHours=24;
+	if(props.durationList.length){
+		props.durationList.map(ele=>{
+			if(!ele.isActive) activeHours=activeHours-1
+		})
+	}
 	const data = {
     datasets: [{
-        data: [11.8,12.2],
+        data: [24-activeHours,activeHours],
         backgroundColor:["#e82525","#3ddbac"]
     }],
 
@@ -17,7 +23,7 @@ const activityDurationMonitor=()=>{
 	return(
 		<div className="ActivityDurationMonitor">
 				<div>
-					<Doughnut   data={data} options={{  maintainAspectRatio: false, legend:{display:true,position:'left',align:'center'},title:{display:true,text:"Activity during the last 24h",fontColor:"#fff"} }}/>
+					<Doughnut data={data} options={{  maintainAspectRatio: false, legend:{display:true,position:'left',align:'center'},title:{display:true,text:"Activity during 24h",fontColor:"#fff"} }}/>
 				</div>
 				
 		</div>

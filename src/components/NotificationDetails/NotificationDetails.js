@@ -1,12 +1,27 @@
-import React from 'react'
+import React,{Component}from 'react'
 import './NotificationDetails.css'
 import ModuleInfos from '../MyModuleDetails/ModuleInfos/ModuleInfos'
 import NotificationInfos from './NotificationInfos/NotificationInfos'
+import api from '../../api/api'
 
-const notificationDetails=(props)=>(
-	<div className="NotificationDetails">
-		<NotificationInfos type="Activity State" description="temperature is too low" createdAt="02/12/1994" />
-		<ModuleInfos number="120054" title="New device" type="Smart tv" state="On" createdAt='02/12/1994 14:20' description="this is a smart tv that allows users to wach their best tv shows while sleeping" />
-	</div>
-)
+class notificationDetails extends Component{
+	state={
+		module:null,
+		notification:null,
+		error:"",
+		loading:true
+	}
+	async componentDidMount(){
+	   let result= await api.getNotificationInfos(this.props.match.params.id)
+       this.setState({...result,loading:false})
+	}
+	render(){
+		return(
+			<div className="NotificationDetails">
+				<NotificationInfos type={this.state.notification && this.state.notification.type} description={this.state.notification && this.state.notification.notificationDescription} createdAt={this.state.notification && this.state.notification.detectedAt} />
+				<ModuleInfos number={this.state.module && this.state.module.number} title={this.state.module && this.state.module.title} type={this.state.module && this.state.module.type} state={this.state.module && this.state.module.state} createdAt={this.state.module && this.state.module.created_at} description={this.state.module && this.state.module.description} />
+			</div>
+			)
+	}
+}
 export default notificationDetails

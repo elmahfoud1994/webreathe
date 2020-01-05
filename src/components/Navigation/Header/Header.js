@@ -14,16 +14,10 @@ class Header extends Component{
             return{dropDownIsVisible:!prevState.dropDownIsVisible}
         })
     }
-    addModule=()=>{
-        this.setState({
-            dropDownIsVisible:false
-        })
-        this.props.clicked()
-    }
     render(){
         return(
             <header className='Header'>
-                <DropDown clicked={this.showDropDownHandler} show={this.state.dropDownIsVisible} add={this.addModule}/>
+                <DropDown clicked={this.showDropDownHandler} show={this.state.dropDownIsVisible} />
                 <DropDownButton clicked={this.showDropDownHandler}/>
                 <Logo />
                 <nav>
