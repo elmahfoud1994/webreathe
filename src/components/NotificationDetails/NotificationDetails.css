@@ -7,10 +7,6 @@
 		display: flex;
 		flex-flow: row;
 		overflow-y: none;
-		justify-content: center;
 		align-items: center;
-	
 	}
-	
-
 }
