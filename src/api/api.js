@@ -1,64 +1,47 @@
+//this is the list of the methods we use to communicate with the backend.
 
 
-//this method loads the modules from a backend server.
+/*
+	Modules methods
+*/
+
+//this method loads the modules from a backend server using a get request (supports pagination).
 const getModules=async(currentPage)=>{
 	try{
 		const response=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/modules?page='+(currentPage-1))
 		const jsonResponse= await response.json()
 		if(jsonResponse.errorMessage){
-			return{
-				modules:[],
-				count:0,
-				error:jsonResponse.errorMessage
-			}
+			throw {message:jsonResponse.errorMessage}
 		}
 		return {
 			modules:jsonResponse.modules,
 			count:jsonResponse.count,
-			error:""
 		}
 	}
 	catch(error){
-		return{
-			modules:[],
-			count:0,
-			error:error.message
-		}
+		throw {message:error.message}
 	}
 }
-
+//this method loads a module information from a backend server using a get request.
 const getModuleInfos=async(id)=>{
 	try{
 		const response=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/modules/'+id)
 		const jsonResponse= await response.json()
 		if(jsonResponse.errorMessage){
-			return{
-				module:null,
-				temperatureHistory:[],
-				activityStateHistory:[],
-				dataExchangeHistory:[],
-				error:jsonResponse.errorMessage
-			}
+			throw {message:jsonResponse.errorMessage}
 		}
 		return{
 			module:jsonResponse.module,
 			temperatureHistory:jsonResponse.temperatureHistory,
 			activityStateHistory:jsonResponse.activityStateHistory,
-			dataExchangeHistory:jsonResponse.dataExchangeHistory,
-			error:""
+			dataExchangeHistory:jsonResponse.dataExchangeHistory
 		}
 	}
 	catch(error){
-		return{
-				module:null,
-				temperatureHistory:[],
-				activityStateHistory:[],
-				dataExchangeHistory:[],
-				error:error.message
-			}
-		
+		throw {message:error.message}
 	}
 }
+//this method allows us to create a new module i using a post request.
 const createNewModule=async(model)=>{
 	try{
 		const result=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/modules', {
@@ -69,13 +52,21 @@ const createNewModule=async(model)=>{
 			},
 			body: JSON.stringify(model),
 		});
-		const response=await result.json()
-		return response
+		const jsonResponse= await result.json()
+		if(jsonResponse.errorMessage){
+
+			throw {message:jsonResponse.errorMessage}
+		}
 	}
 	catch(error){
-		return error
+		throw {message:error.message}
 	}
 }
+
+/**
+	Notifications related methods
+*/
+
 const updateNotificationSeen=async(model)=>{
 	try{
 		const result=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/notifications', {
@@ -91,58 +82,41 @@ const updateNotificationSeen=async(model)=>{
 
 	}
 }
+
+//this method loads a module information from a backend server using a get request.
 const getNotificationInfos=async(id)=>{
 	try{
 		const response=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/notifications/'+id)
 		const jsonResponse= await response.json()
 		if(jsonResponse.errorMessage){
-			return{
-			module:null,
-			notification:null,
-			error:jsonResponse.errorMessage
-			}
+			throw {message:jsonResponse.errorMessage}
 		}
 		return{
 			module:jsonResponse.module,
 			notification:jsonResponse.notification,
-			error:""
 		}
 	}
 	catch(error){
-
-		return{
-			module:null,
-			notification:null,
-			error:error
-		}
+		throw {message:error.message}
 	}
 }
 
-//this method loads the notifications from a backend server.
+//this method loads the notifications from a backend server using a get request (supports pagination).
 const getNotifications=async(currentPage)=>{
 	try{
 		
 		const response=await fetch('https://bouatim-webreath-iot-backend.herokuapp.com/api/notifications?page='+(currentPage-1))
 		const jsonResponse= await response.json()
 		if(jsonResponse.errorMessage){
-			return{
-				notifications:[],
-				count:0,
-				error:jsonResponse.errorMessage
-			}
+			throw {message:jsonResponse.errorMessage}
 		}
 		return {
 			notifications:jsonResponse.notifications,
-			count:jsonResponse.count,
-			error:""
+			count:jsonResponse.count
 		}
 	}
 	catch(error){
-		return{
-			notifications:[],
-			count:0,
-			error:error.message
-		}
+		throw {message:error.message}
 	}
 }
 

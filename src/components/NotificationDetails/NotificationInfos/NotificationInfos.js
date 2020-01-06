@@ -1,9 +1,14 @@
 import React from 'react'
+import './NotificationInfos.css'
+//importing icons from react icons
 import { FiType } from 'react-icons/fi'
 import { MdDescription } from 'react-icons/md'
 import {IoMdTime} from "react-icons/io"
+//importing an image from our assets
 import notificationImage from '../../../assets/images/notification1.svg'
-import './NotificationInfos.css'
+//this is a presentation component,wich mean he is only responsible of rendering the ui,he wont handle any logic,the logic is usaly habdled by a container
+//this component recives some properties to render from a container (the parent)
+//this component shows the informations of a notification.
 const notificationInfos=(props)=>(
 	<div className="NotificationInfos">
 		<div className="NotificationInfosHeader">

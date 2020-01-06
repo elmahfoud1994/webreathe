@@ -1,10 +1,13 @@
 import React from 'react'
 import Aux from '../../../hoc/Auxilary'
-import { GiPoliceBadge } from "react-icons/gi"
-import {FaCheck} from "react-icons/fa"
-import {IoMdCloseCircleOutline} from "react-icons/io"
 import './NewModuleStatus.css'
-//incomplete please take care of responsive in wide scale
+//importing icons from react icons
+import { GiPoliceBadge } from "react-icons/gi"
+import { FaCheck } from "react-icons/fa"
+import { IoMdCloseCircleOutline } from "react-icons/io"
+//this is a presentation component,wich mean he is only responsible of rendering the ui,he wont handle any logic,the logic is usaly habdled by a container
+//this component recives some properties to render from a container (the parent)
+//this component shows the status of both forms: 1 and 2.
 const newModuleStatus=(props)=>(
     <Aux>
         <div className="imageHolder">

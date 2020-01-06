@@ -1,12 +1,18 @@
 import React from 'react'
 import './ModuleInfos.css'
+//importing an image from our assets
 import moduleInfosImage from '../../../assets/images/moduleInfos.svg'
+//importing icons from react icons
 import { FiType } from 'react-icons/fi'
 import { TiSortNumerically } from 'react-icons/ti'
 import { MdDescription } from 'react-icons/md'
 import { GoKeyboard } from 'react-icons/go'
 import { IoMdTime } from 'react-icons/io'
 import { FaPowerOff } from 'react-icons/fa'
+
+//this is a presentation component,wich mean he is only responsible of rendering the ui,he wont handle any logic,the logic is usaly habdled by a container
+//this component recives some properties to render from a container (the parent)
+//this component renders the informations of a given module
 const moduleInfos=(props)=>(
 	<div className="ModuleInfos">
 		<div className="ModuleInfosHeader">

@@ -10,7 +10,7 @@ const notificationItem=(props)=>{
 		classes=["NotificationItem","ActiveNotification"]
 	}
 	return(
-	<Link to={"/webreathe/notifications/"+props.id} className={classes.join(" ")} onClick={()=>props.clicked(props.id)}>
+	<Link to={"/webreathe/notifications/"+props.id} className={classes.join(" ")}>
 		<div className="NotificationItemImage">
 			<img src={notificationImage}  />
 		</div>

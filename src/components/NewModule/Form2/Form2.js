@@ -1,16 +1,20 @@
 import React from 'react'
+import './Form2.css'
 import Aux from '../../../hoc/Auxilary'
+//importing the component that builds this component
 import FormHeader from '../FormHeader/FormHeader'
 import LoadSprint2 from '../../ui/LoadSprint2/LoadSprint2'
-import './Form2.css'
-import {FaTemperatureHigh,FaExchangeAlt} from 'react-icons/fa'
-import {GoGraph} from 'react-icons/go'
-import {GiSandsOfTime} from 'react-icons/gi'
-
+//importing icons from react icons
+import { FaTemperatureHigh,FaExchangeAlt } from 'react-icons/fa'
+import { GoGraph } from 'react-icons/go'
+import { GiSandsOfTime } from 'react-icons/gi'
+//this is a presentation component,wich mean he is only responsible of rendering the ui,he wont handle any logic,the logic is usaly habdled by a container
+//this component recives some properties to render from a container (the parent)
+//this component shows the second form of the New Module Container.
 const form2 =(props)=>(
 			<Aux>
        			<div className="Form2Body">
-       			{   !props.submitting? <Aux>
+       			{   !(props.submitting)? <Aux>
 	       			<FormHeader navigate={props.navigate} phase={props.phase} form2IsValid={props.form2IsValid} form1IsValid={props.form1IsValid}/>
 	       			<p>Please select at least one item to monitor.</p>
 	       			<div className="ItemsContainer">
@@ -37,7 +41,7 @@ const form2 =(props)=>(
 	       			</Aux>
 	       			:
 	       			<div style={{width:"100%",height:"100%"}}>
-	       					<LoadSprint2 />
+	       					 <LoadSprint2 /> 
 	       			</div>
 	       		}
 	       			

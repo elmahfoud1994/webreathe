@@ -1,5 +1,8 @@
 import React from 'react'
 import './LoadingSprint.css'
+//this is a presentation component,wich mean he is only responsible of rendering the ui,he wont handle any logic,the logic is usaly habdled by a container
+//this component recives some properties to render from a container (the parent)
+//this component shows a loading animation.
 const loadingSprint=(props)=>(
 	<div class="sk-cube-grid">
 		<div class="sk-cube sk-cube1"></div>

@@ -1,7 +1,11 @@
 import React from 'react'
 import Aux from '../../../hoc/Auxilary'
 import './FormHeader.css'
+//importing icons from react icons
 import { IoIosArrowBack } from "react-icons/io";
+//this is a presentation component,wich mean he is only responsible of rendering the ui,he wont handle any logic,the logic is usaly habdled by a container
+//this component recives some properties to render from a container (the parent)
+//this component shows the header of  form1 and form2.
 const formHeader=(props)=>(
 	<Aux>
 		<div className="FormHeader">

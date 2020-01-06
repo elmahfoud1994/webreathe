@@ -1,11 +1,18 @@
-import React,{Component} from 'react'
+import React,{ Component } from 'react'
 import './NewModule.css'
-import Form1 from '../NewModule/Form1/Form1'
-import Form2 from '../NewModule/Form2/Form2'
-import NewModuleStatus from '../NewModule/NewModuleStatus/NewModuleState'
+//importing the forms that are used to create a new Module
+import Form1 from '../../components/NewModule/Form1/Form1'
+import Form2 from '../../components/NewModule/Form2/Form2'
+//importing the a commonent that allow to track the status of the form
+import NewModuleStatus from '../../components/NewModule/NewModuleStatus/NewModuleState'
 import api from '../../api/api'
-import {MdImportantDevices} from 'react-icons/md'
+//import an icon from react icons
+import { MdImportantDevices } from 'react-icons/md'
+//Redux import ,to access the store (the store is just like a global state accessible by all containers)
+import { connect } from 'react-redux'
+import { createModuleRequest,clearSubmit } from '../../actions'
 class NewModule extends Component{
+    //this is the state of the container,i used it to control ,and to fill the form.
 	state={
 		phase2:false,
         temperature:false,
@@ -18,8 +25,9 @@ class NewModule extends Component{
         number:null,
         description:"",
         form1IsValid:false,
-        submitting:false
 	}
+
+    //this methode change the form we are filling,we have two forms and we need to fill them both to submit form.
 	changephaseHandler=()=>{
 		this.setState((prevState)=>{
 			return{
@@ -29,11 +37,13 @@ class NewModule extends Component{
 		})
 	}
 
-
+    //a method that validates if the value of a form is an integer
     isInt=(value)=>{
         let x;
         return isNaN(value) ? !1 : (x = parseFloat(value), (0 | x) === x);        
     }
+
+    //this methods ensures that the data filled in the first form are valid    
     form1Handler=(step,item)=>{
         switch(step){
             case 0:
@@ -63,7 +73,7 @@ class NewModule extends Component{
         }
     }
   
-
+    //this method allows  us to select the items to monitor in the second form
     selectItemsHandler=(item)=>{
         switch(item){
             case 0:
@@ -100,12 +110,11 @@ class NewModule extends Component{
                 break;
         }
     }
+
+    //this method submits the data filled in both forms.
      submitHandler=async(e)=>{
        e.preventDefault()
-       this.setState({
-        submitting:true
-       })
-       const result=await api.createNewModule({
+       this.props.createModule({
             title:this.state.name,
             type:this.state.type,
             number:this.state.number,
@@ -114,23 +123,17 @@ class NewModule extends Component{
             shouldMonitorTemperature:this.state.temperature,
             shouldMonitorActivityState:this.state.activityState,
             shouldMonitorActivityDuration:this.state.activityDuration
-
        })
-       console.log(this.props)
-       if(result){
-            this.setState({
-                submitting:false
-            })
-            this.props.history.push('/webreathe')
-       }
-       else {
-        this.setState({
-            submitting:false
-        })
-        alert("something went wrong,please try later")
-        }
+        
     }
+    //this method renders the page
 	render(){
+        //if the module was successufuly created we navigate ,to the list modules route,and we clear the forms
+        if(this.props.success){
+            this.props.clearSubmit()
+            this.props.history.push('/webreathe')
+
+        }
 		return (    
                     <div className="NewModuleContainer">
         				<div className="NewModule"> 
@@ -141,7 +144,7 @@ class NewModule extends Component{
             				<div  className="ModuleBody">
                 				<form className="LeftSide">
                     				{this.state.phase2?
-                                        <Form2 navigate={this.changephaseHandler} submit={this.submitHandler} submitting={this.state.submitting} form1IsValid={this.state.form1IsValid} form2IsValid={this.state.form2IsValid} selectItemsHandler={(item)=>this.selectItemsHandler(item)}  activityDuration={this.state.activityDuration} form2IsValid={this.state.form2IsValid} activityState={this.state.activityState} temperature={this.state.temperature}  dataExchange={this.state.dataExchange} phase={this.state.phase2}/>:
+                                        <Form2 navigate={this.changephaseHandler} submit={this.submitHandler}  submitting={this.props.submitting} form1IsValid={this.state.form1IsValid} form2IsValid={this.state.form2IsValid} selectItemsHandler={(item)=>this.selectItemsHandler(item)}  activityDuration={this.state.activityDuration} form2IsValid={this.state.form2IsValid} activityState={this.state.activityState} temperature={this.state.temperature}  dataExchange={this.state.dataExchange} phase={this.state.phase2}/>:
                                         <Form1 navigate={this.changephaseHandler} form1IsValid={this.state.form1IsValid} form2IsValid={this.state.form2IsValid} name={this.state.name} type={this.state.type} number={this.state.number} description={this.state.description} form1Handler={(item,text)=>this.form1Handler(item,text)} phase={this.state.phase2}/>}
                 				</form>
                 				<div className="RightSide">
@@ -154,4 +157,18 @@ class NewModule extends Component{
 	}
     
 }
-export default NewModule
+//the properties we load from the store
+const mapStateToProps = state => ({
+    submitting: state.moduleSubmit.submitting,
+    error:state.moduleSubmit.errorSubmit,
+    success:state.moduleSubmit.success
+})
+//the methods we can use to update the data in the  store
+const mapDispatchToProps = dispatch => ({
+    createModule: (module) => dispatch(createModuleRequest(module)),
+    clearSubmit:() => dispatch(clearSubmit())
+})
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(NewModule)

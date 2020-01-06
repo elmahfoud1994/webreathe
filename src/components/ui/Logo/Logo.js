@@ -3,7 +3,7 @@ import './Logo.css'
 import logoImage from '../../../assets/images/webreathe.png'
 const logo=(props)=>(
     <div className="Logo">
-        <img src={logoImage} />
+        <a href="http://webreathe.fr/" target="blank" ><img src={logoImage} /></a>
     </div>
 )
 export default logo
