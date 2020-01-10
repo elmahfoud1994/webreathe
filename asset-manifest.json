@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/webreathe/static/css/main.a5444d6a.chunk.css",
-    "main.js": "/webreathe/static/js/main.d3707140.chunk.js",
-    "main.js.map": "/webreathe/static/js/main.d3707140.chunk.js.map",
+    "main.js": "/webreathe/static/js/main.b8bc253e.chunk.js",
+    "main.js.map": "/webreathe/static/js/main.b8bc253e.chunk.js.map",
     "runtime-main.js": "/webreathe/static/js/runtime-main.c80820c6.js",
     "runtime-main.js.map": "/webreathe/static/js/runtime-main.c80820c6.js.map",
     "static/js/2.3adf8ecd.chunk.js": "/webreathe/static/js/2.3adf8ecd.chunk.js",
     "static/js/2.3adf8ecd.chunk.js.map": "/webreathe/static/js/2.3adf8ecd.chunk.js.map",
     "index.html": "/webreathe/index.html",
-    "precache-manifest.83d3f39ab667fefa1778710fe4d98147.js": "/webreathe/precache-manifest.83d3f39ab667fefa1778710fe4d98147.js",
+    "precache-manifest.7173a49599d94ba6e66c183d28a52322.js": "/webreathe/precache-manifest.7173a49599d94ba6e66c183d28a52322.js",
     "service-worker.js": "/webreathe/service-worker.js",
     "static/css/main.a5444d6a.chunk.css.map": "/webreathe/static/css/main.a5444d6a.chunk.css.map",
     "static/js/2.3adf8ecd.chunk.js.LICENSE": "/webreathe/static/js/2.3adf8ecd.chunk.js.LICENSE",
@@ -23,6 +23,6 @@
     "static/js/runtime-main.c80820c6.js",
     "static/js/2.3adf8ecd.chunk.js",
     "static/css/main.a5444d6a.chunk.css",
-    "static/js/main.d3707140.chunk.js"
+    "static/js/main.b8bc253e.chunk.js"
   ]
 }
