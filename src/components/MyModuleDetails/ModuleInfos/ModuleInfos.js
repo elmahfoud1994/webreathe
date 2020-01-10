@@ -23,7 +23,7 @@ const moduleInfos=(props)=>(
 			<h3><TiSortNumerically/> Number: {props.number}</h3>
 			<h3><GoKeyboard/> Title : {props.title}</h3>
 			<h3><FiType/> Type : {props.type}</h3>
-			<h3><FaPowerOff/> State : {props.state} </h3>
+			<h3><FaPowerOff/> State : {props.state===0?"OFF":"ON"} </h3>
 			<h3><MdDescription/> Description : {props.description}</h3>
 			<h3><IoMdTime/> Creatd At : {props.createdAt}</h3>
 			

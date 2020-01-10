@@ -23,7 +23,7 @@ class MyModuleDetails extends Component{
 
         return(
             <div className="MyModuleDetails">
-                <ModuleInfos title={this.props.module&&this.props.module.title} type={this.props.module&&this.props.module.type} state={this.props.module&&this.props.module.type} createdAt={this.props.module&&this.props.module.created_at} description={this.props.module&&this.props.module.description} />
+                <ModuleInfos title={this.props.module&&this.props.module.title} type={this.props.module&&this.props.module.type} state={this.props.module&&this.props.module.state} createdAt={this.props.module&&this.props.module.created_at} description={this.props.module&&this.props.module.description} />
                 <div className="MyModuleStats">
                     <ModuleMonitor error={this.props.error} loading={this.props.loading} shouldMonitorDuration={this.props.module&& this.props.module.shouldMonitorActivityDuration} temperatureHistory={this.props.temperatureHistory} activityStateHistory={this.props.activityStateHistory} dataExchangeHistory={this.props.dataExchangeHistory}/>
                 </div>
